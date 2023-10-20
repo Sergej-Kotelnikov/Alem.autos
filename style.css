@@ -1,0 +1,299 @@
+/*
+Global
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color:#363F5A
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ul {
+    list-style: none;
+  }
+  
+
+  main {
+    
+  }
+ 
+
+
+
+
+  ._container {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    
+  }
+
+
+  /* Header */
+
+  .header-background {
+    background: url(img/Slide16_94.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+  
+  }
+
+.alem-header {
+  display: flex;
+  justify-content: center;
+  
+    
+}
+.alem-header__container {
+  
+  
+}
+
+
+
+.alem-header__contact-name {
+  display: flex;
+  justify-content: left;
+}
+.alem-header__contact-name-logo {
+  font-size: 2rem;
+  color: #363F5A;
+}
+
+.alem-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+}
+.alem-header__content:last-child {
+  
+}
+.alem-header__contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.alem-header__contact-item {
+  padding-right: 3rem;
+
+  
+}
+.alem-header__contact-item:last-child {
+  padding-right: 0rem;
+}
+.contact-phone {
+  font-size: 2rem;
+  color: #363F5A;
+}
+
+
+.alem-header__contact-item-name {
+}
+.alem-header__contact-item-logo {
+    width: 100%;
+    max-width: 11rem;
+    height: auto;
+}
+
+
+
+
+
+
+.alem-header__menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.alem-header__menu-list {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+.alem-header__menu-item {
+  padding-right: 3rem;
+  font-size: 1.4rem;
+  color: #363F5A;
+}
+
+
+
+  /* Main */
+  .alem-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .alem-main__container {
+    justify-content: center;
+    align-items: center;
+    max-width: 162rem;
+  }
+  ._container {
+  }
+  .alem-main__content {
+  }
+
+
+    /* About */
+
+
+  .about {
+   
+}
+.about_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+
+}
+.about_content-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about_content-icon {
+  height: 100%;
+  max-height: 6rem;
+  width: auto;
+  margin-right: 3rem;
+}
+.about_content-text {
+    width: 100%;
+    max-width: 43rem;
+    height: auto;
+    margin-left: 8rem; 
+}
+.about_content-text:last-child{
+    margin-left: 0rem;
+
+}
+.about_content-text-bold {
+  font-size: 1.4rem;
+  color: #F5F5F5;
+  font-weight: 700;
+}
+.about_content-text-regilar {
+  font-size: 1.4rem;
+  color: #F5F5F5;
+}
+.alem-main_gif {
+
+ 
+}
+.alem-main_gif-img {
+
+  max-width: 100%;
+  height: auto;
+}
+
+
+    /* auto-bisines */
+
+
+.auto-bisines {
+  z-index: 10;
+}
+.auto-bisines-header {
+  display: flex;
+  justify-content: center;
+}
+.auto-bisines-header-text {
+  font-size: 4rem;
+  text-align: center;
+  color: #F5F5F5;
+  font-weight: 500;
+  margin-top: 8rem;
+}
+.auto-bisines_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  
+}
+.auto-bisines_background {
+  position: relative;
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  
+  margin-top: -46rem;
+}
+.auto-bisines_background-img {
+
+}
+.auto-bisines-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.auto-bisines-icon {
+  height: 100%;
+  max-height: 6rem;
+  width: auto;
+  margin-right: 3rem;
+}
+.auto-bisines-text {
+  width: 100%;
+  max-width: 67rem;
+  height: auto;
+  margin-left: 8rem; 
+}
+.auto-bisines-text:last-child {
+  margin-left: 0rem;
+}
+.auto-bisines-text-bold {
+  font-size: 1.4rem;
+  color: #F5F5F5;
+  font-weight: 700;
+}
+.auto-bisines-text-regilar {
+  font-size: 1.4rem;
+  color: #F5F5F5;
+}
+
+.bisines-item1 {
+  
+
+}
+
+.bisines-item2 {
+  justify-content: flex-end;
+  padding-left: 60%;
+  padding-top: 1rem;
+
+}
+
+.bisines-item3 {
+  justify-content: center;
+  padding-left: 35%;
+  padding-top: 5rem;
+
+}

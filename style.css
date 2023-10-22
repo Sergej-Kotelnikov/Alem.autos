@@ -433,16 +433,16 @@ Global
     font-size: 1rem;
     color: #363F5A;
     display: block;
+    flex-wrap: nowrap;
   }
   .alem-header__contact-item-name {
   }
   .alem-header__contact-item {
-    padding-right: 1rem;
+    padding-right: 1.5rem;
   }
   
   .alem-header__contact-item-soc {
-    width: 100%;
-    max-width: 1.5rem;
+    max-width: 1rem;
     height: auto;
   }
   .alem-header__contact-item-logo {

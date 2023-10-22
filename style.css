@@ -25,9 +25,17 @@ Global
   ul {
     list-style: none;
   }
+  /* scrollbar*/
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #F5F5F5;
+}
   
 
   main {
+    padding-top: -100%;
     
   }
  
@@ -36,29 +44,42 @@ Global
 
 
   ._container {
-    justify-content: center;
-    align-items: center;
+  
     width: 90%;
-    
+    margin: auto;
+    max-width: 160rem;
+    padding: 5rem 1.5rem;
   }
-
+.text-regilar {
+  font-size: 1.4rem;
+  color: #F5F5F5;
+}
+.text-bold {
+  font-size: 1.4rem;
+  color: #F5F5F5;
+  font-weight: 700;
+}
+.header-text {
+  font-size: 4rem;
+  text-align: center;
+  color: #F5F5F5;
+  font-weight: 500;
+  margin-top: 8rem;
+}
 
   /* Header */
 
   .header-background {
     background: url(img/Slide16_94.jpg);
-    background-size: cover;
+    height: 110vh;
     background-repeat: no-repeat;
-    height: 100vh;
-    
-  
+    background-position: center;
+    background-size: cover;    
   }
 
 .alem-header {
   display: flex;
   justify-content: center;
-  
-    
 }
 .alem-header__container {
   
@@ -80,9 +101,10 @@ Global
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
-
+  margin-top: -28%;
+  padding: 0.2%;
 }
+
 .alem-header__content:last-child {
   
 }
@@ -133,6 +155,46 @@ Global
   font-size: 1.4rem;
   color: #363F5A;
 }
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  
+}
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #363F5A;
+  text-align: center;
+  padding: 1rem;
+}
+#navbar a:hover {
+  color: #000;
+  font-weight: 700;
+  transition: 0.3s;
+}
+/* Page content */
+.content {
+  padding: 1.6rem;
+}
+/* Класс липкости добавляется на панель навигации с помощью JS, когда он достигает позиции прокрутки. */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F5F5F5;
+  flex-wrap: wrap;
+}
+/* Добавьте немного отступов к содержимому страницы, чтобы предотвратить внезапное быстрое
+движение (поскольку панель навигации занимает новую позицию вверху страницы (позиция: фиксированная и верхняя: 0) */
+.sticky + .content {
+  padding-top: 6rem;
+}
+
+
+
+
 
 
 
@@ -166,8 +228,6 @@ Global
   align-items: flex-start;
   margin-top: 8rem;
   margin-bottom: 8rem;
-
-
 }
 .about_content-item {
   display: flex;
@@ -191,13 +251,10 @@ Global
 
 }
 .about_content-text-bold {
-  font-size: 1.4rem;
-  color: #F5F5F5;
-  font-weight: 700;
+
 }
 .about_content-text-regilar {
-  font-size: 1.4rem;
-  color: #F5F5F5;
+
 }
 .alem-main_gif {
 
@@ -221,12 +278,9 @@ Global
   justify-content: center;
 }
 .auto-bisines-header-text {
-  font-size: 4rem;
-  text-align: center;
-  color: #F5F5F5;
-  font-weight: 500;
-  margin-top: 8rem;
 }
+
+
 .auto-bisines_content {
   display: flex;
   flex-wrap: wrap;
@@ -239,7 +293,7 @@ Global
 .auto-bisines_background {
   position: relative;
   z-index: -1;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -270,13 +324,10 @@ Global
   margin-left: 0rem;
 }
 .auto-bisines-text-bold {
-  font-size: 1.4rem;
-  color: #F5F5F5;
-  font-weight: 700;
+
 }
 .auto-bisines-text-regilar {
-  font-size: 1.4rem;
-  color: #F5F5F5;
+
 }
 
 .bisines-item1 {
@@ -297,3 +348,296 @@ Global
   padding-top: 5rem;
 
 }
+
+
+
+
+
+
+ 
+@media (max-width: 1200px) {
+  /*
+  Стили для устройств, у которых ширина viewport меньше или равно 1200 пикселей,
+  */
+  ._container {
+  
+    width: 90%;
+    margin: auto;
+    max-width: 100rem;
+    padding: 5rem 1.5rem;
+  }
+.text-regilar {
+  font-size: 1.2rem;
+  color: #F5F5F5;
+}
+.text-bold {
+  font-size: 1.2rem;
+  color: #F5F5F5;
+  font-weight: 700;
+}
+.header-text {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #F5F5F5;
+  font-weight: 500;
+  margin-top: 8rem;
+}
+
+
+.alem-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2%;
+}
+
+.auto-bisines_background {
+  z-index: -1;
+  max-width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  
+  margin-top: -46rem;
+}
+}
+
+
+@media (max-width: 1100px) {
+  .auto-bisines_background {
+    z-index: -1;
+    width: 90rem;
+    max-width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+    margin-top: -46rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-background {
+    background: url(img/Slide16_94.jpg);
+    height: auto;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+  }
+  .alem-header__contact-name-logo {
+    font-size: 1rem;
+    color: #363F5A;
+  }
+  .contact-phone {
+    font-size: 1rem;
+    color: #363F5A;
+    display: block;
+  }
+  .alem-header__contact-item-name {
+  }
+  .alem-header__contact-item {
+    padding-right: 1rem;
+  }
+  
+  .alem-header__contact-item-soc {
+    width: 100%;
+    max-width: 1.5rem;
+    height: auto;
+  }
+  .alem-header__contact-item-logo {
+      width: 100%;
+      max-width: 4rem;
+      height: auto;
+  }
+
+  .alem-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: -10%;
+    padding: 0.2%;
+  
+  }
+  .about_content {
+    flex-wrap: wrap;
+  }
+  .about_content-item {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about_content-icon {
+    height: 100%;
+    max-height: 4rem;
+    width: 4rem;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_content-icon-img {
+    max-width: 6rem;
+    height: auto;
+  }
+
+  .auto-bisines-item {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .auto-bisines-icon-img {
+    max-width: 5rem;
+    margin-right: 4rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .auto-bisines-icon {
+    max-width: 6rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .auto-bisines_background-img {
+    display: none;
+  }
+  .bisines-item2 {
+    justify-content: flex-start;
+    padding: 0;  
+  }
+  
+  .bisines-item3 {
+    justify-content: center;
+    padding: 0; 
+  
+  }
+  .auto-bisines_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+  }
+  .header-text {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #F5F5F5;
+    font-weight: 500;
+    margin-top: 4rem;
+  }
+
+
+
+
+
+
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 830px) {
+  .alem-header__menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .alem-header__menu-list {
+    display: block;
+    margin: 1.5rem;
+  }
+  
+  .menu_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .container__menu {
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 100;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #363F5A;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transform: all 0.3s ease 0s;
+  }
+
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #363F5A;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transform: all 0.3s ease 0s;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .alem-header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: all 0.3s ease 0s;
+    background-color: #F5F5F5;
+    padding: 60px 10px 20px 100px;
+    flex-wrap: wrap;
+  }
+  .alem-header__menu.active {
+    top: 0;
+  }
+  .li {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .phone__footer {
+    display: none;
+  }
+  .footer__title {
+    display: none;
+  }
+  .header-top:before {
+    display: none;
+  }
+  .body.lock {
+    overflow: hidden;
+  }
+}
+
+
+

@@ -799,12 +799,11 @@ Global
   .alem-header_title2 {
     font-size: 5.5rem;
     font-weight: 500;
-    -webkit-text-stroke: 0.05rem #3653C7;
-    -webkit-text-fill-color: transparent;
+    color: #F5F5F5;
     display: inline-block;
   }
   .title-china {
-    color: #F5F5F5;
+    color: #363F5A;
   }
   
 

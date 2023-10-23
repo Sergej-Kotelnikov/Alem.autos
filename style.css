@@ -769,7 +769,7 @@ Global
 
   /* Заголовок */
   .alem-header_title {
-    margin-top: 65%;
+    margin-top: 70%;
   }
   .alem-header_title-container1{
     display: flex;
@@ -798,8 +798,8 @@ Global
   }
   .alem-header_title2 {
     font-size: 5.5rem;
-    font-weight: 800;
-    -webkit-text-stroke: 0.1rem #3653C7;
+    font-weight: 500;
+    -webkit-text-stroke: 0.05rem #3653C7;
     -webkit-text-fill-color: transparent;
     display: inline-block;
   }

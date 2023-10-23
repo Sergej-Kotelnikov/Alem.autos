@@ -226,7 +226,7 @@ Global
 .alem-header_title2 {
   font-size: 18rem;
   font-weight: 900;
-  -webkit-text-stroke: 0.2rem #3653C7;
+  -webkit-text-stroke: 0.1rem #3653C7;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }

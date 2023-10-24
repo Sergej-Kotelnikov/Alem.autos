@@ -44,9 +44,7 @@ Global
 
 
   ._container {
-  
     width: 90%;
-    
     max-width: 160rem;
     padding: 2rem 1.5rem;
   }
@@ -226,7 +224,7 @@ Global
 .alem-header_title2 {
   font-size: 18rem;
   font-weight: 900;
-  -webkit-text-stroke: 0.1rem #3653C7;
+  -webkit-text-stroke: 0.2rem #3653C7;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -244,6 +242,15 @@ Global
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  .alem-main-wrapp {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
   .alem-main__container {
     justify-content: center;
@@ -394,6 +401,212 @@ Global
 }
 
 
+/* geography */
+
+.alem-geography {
+  width: 100%;
+
+}
+.alem-geography-header {
+}
+.alem-geography-header-text {
+}
+.header-text {
+}
+.alem-geography_content {
+}
+._container {
+}
+.alem-geography-item {
+  
+}
+.alem-geography-item-container {
+  display: flex;
+  left: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.alem-geography-item-background {
+  display: flex;
+  position: absolute;
+  left: 0;
+  max-width: 100%;
+  height: auto; 
+}
+.alem-geography-item-background-img {
+  max-width: 100%;
+  height: auto;
+}
+.alem-geography-item-text-container {
+  border-radius: 5px;
+  background: rgba(245, 245, 245, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 40%;
+  margin-top: 5%;
+  padding: 10% 5%;
+  text-align: left;
+  z-index: 2;
+}
+.p {
+  display: inline;
+}
+.alem-geography-item-text {
+  font-size: 2rem;
+  color: #F5F5F5;
+  display: inline-block;
+  text-align: left;
+}
+.alem-geography-item-text-bold {
+  font-size: 2rem;
+  color: #F5F5F5;
+  font-weight: 600;
+}
+.alem-geography-item-flag {
+  max-width: 26rem;
+  width: 100%;
+  height: auto;
+  margin-left: 3%;
+  margin-right: -12%;
+  z-index: 2;
+}
+.alem-geography-item-flag-img {
+  max-width: 26rem;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+/* stages */
+
+.alem-stages {
+  width: 100%;
+}
+._container {
+}
+.alem-stages-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alem-stages-header-text {
+  text-align: center;
+}
+.header-text {
+}
+.alem-stages_content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.alem-stages-wrapp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  display: inline;
+  position: relative;
+}
+.stages-right {
+  display: flex;
+  justify-content: center;
+  margin-left: 50rem;
+  margin-bottom: -5.5%;
+
+}
+.stages-left {
+  display: flex;
+  justify-content: center;
+  margin-right: 59rem;
+  margin-bottom: -5.5%;
+}
+
+.alem-stages-item {
+  
+
+}
+.alem-stages-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.alem-stages-item-img {
+}
+.alem-geography-item-img-img {
+}
+.alem-stages-item-text-container {
+  width: 30rem;
+  height: 25rem;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+.alem-stages-item-text-bold {
+  
+}
+.text-bold {
+}
+.alem-stages-item-text-regilar {
+}
+.text-regilar {
+}
+
+
+
+
+@media (max-width: 1750px) {
+  .alem-geography-item-text-container {
+    border-radius: 5px;
+    background: #363F5A;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 10% 5%;
+    text-align: left;
+  }
+  .p {
+    display: inline;
+  }
+  .alem-geography-item-text {
+    font-size: 2rem;
+    color: #F5F5F5;
+    display: inline-block;
+    text-align: left;
+  }
+  .alem-geography-item-text-bold {
+    font-size: 2rem;
+    color: #F5F5F5;
+    font-weight: 500;
+  }
+}
+
+
+
+
+@media (max-width: 1500px) {
+
+  .alem-geography {
+    margin-top: 8rem;
+  }
+  /* stages */
+
+
+._container {
+}
+
+}
+
+
+
+
+
+
 
 
 
@@ -407,7 +620,7 @@ Global
   
     width: 90%;
     max-width: 100rem;
-    padding: 5rem 1.5rem;
+    padding: 2rem 1.5rem;
   }
 .text-regilar {
   font-size: 1.2rem;
@@ -425,8 +638,6 @@ Global
   font-weight: 500;
   margin-top: 8rem;
 }
-
-
 
 .alem-header_title1 {
   font-size: 6rem;
@@ -458,6 +669,20 @@ Global
   justify-content: center;
   
   margin-top: -46rem;
+}
+.alem-geography {
+  margin-top: 18rem;
+}
+.alem-geography-item-text {
+  font-size: 1.4rem;
+  color: #F5F5F5;
+  display: inline-block;
+  text-align: left;
+}
+.alem-geography-item-text-bold {
+  font-size: 1.4rem;
+  color: #F5F5F5;
+  font-weight: 500;
 }
 }
 
@@ -586,12 +811,34 @@ Global
   .title-china {
     color: #F5F5F5;
   }
-  
-
-
-
-
-
+  .alem-geography-item-flag {
+    max-width: 10rem;
+    width: 100%;
+    height: auto;
+    margin-left: 3%;
+    margin-right: -12%;
+    z-index: 2;
+  }
+  .alem-geography-item-flag-img {
+    max-width: 10rem;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  .alem-geography {
+    margin-top: 30rem;
+  }
+  .alem-geography-item-background {
+    display: flex;
+    position: absolute;
+    left: 0;
+    max-width: 70%;
+    height: auto; 
+  }
+  .alem-geography-item-background-img {
+    max-width: 70%;
+    height: auto;
+  }
 }
 
 .header__burger {
@@ -879,6 +1126,19 @@ Global
     align-items: start;
     padding: 0; 
   
+  }
+
+
+  .alem-geography-item-text {
+    font-size: 1.2rem;
+    color: #F5F5F5;
+    display: inline-block;
+    text-align: left;
+  }
+  .alem-geography-item-text-bold {
+    font-size: 1.2rem;
+    color: #F5F5F5;
+    font-weight: 500;
   }
 
 }

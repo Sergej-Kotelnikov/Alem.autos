@@ -113,8 +113,6 @@ Global
 }
 .alem-header__contact-item {
   padding-right: 3rem;
-
-  
 }
 .alem-header__contact-item:last-child {
   padding-right: 0rem;
@@ -868,6 +866,9 @@ Global
 }
 
 @media (max-width: 900px) {
+  .contact-phone {
+    display: none;
+  }
   .header-background {
     background: url(img/Slide16_94.jpg);
     height: auto;
@@ -877,29 +878,31 @@ Global
     background-size: cover;    
   }
   .alem-header__contact-name-logo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #363F5A;
   }
-  .contact-phone {
-    font-size: 1rem;
-    color: #363F5A;
-    display: block;
-    flex-wrap: nowrap;
-  }
+
   .alem-header__contact-item-name {
   }
   .alem-header__contact-item {
-    padding-right: 1.5rem;
+    
   }
+
   
   .alem-header__contact-item-soc {
-    max-width: 1rem;
+    max-width: 2rem;
     height: auto;
+    padding-right: 0rem;
+  }
+  .margin-soc {
+    padding-right: 3rem;
   }
   .alem-header__contact-item-logo {
       width: 100%;
-      max-width: 4rem;
+      max-width: 6rem;
       height: auto;
+      position: relative;
+      right: 30%;
   }
 
   .alem-header__content {
@@ -1124,6 +1127,9 @@ Global
 
 
 @media (max-width: 830px) {
+
+
+  
   /* Заголовок */
   .alem-header_title {
   
@@ -1224,7 +1230,6 @@ Global
     color: #363F5A;
   }
   
-
   .about_content  {
     margin-top: 0rem;
     margin-bottom: 4rem;
@@ -1253,7 +1258,6 @@ Global
     height: auto;
   }
   
-
 
   .auto-bisines_content {
     display: flex;
@@ -1312,10 +1316,6 @@ Global
     color: #F5F5F5;
     font-weight: 500;
   }
-
-}
-
-@media (max-width: 500px) {
   .alem-geography {
     margin-top: 160%;
   }

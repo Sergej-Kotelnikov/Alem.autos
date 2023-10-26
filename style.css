@@ -334,7 +334,6 @@ Global
   align-items: flex-start;
   margin-top: 8rem;
   margin-bottom: 8rem;
-  
 }
 .auto-bisines_background {
   position: relative;
@@ -344,7 +343,6 @@ Global
   display: flex;
   justify-content: center;
   overflow: hidden;
-  
   margin-top: -46rem;
 }
 .auto-bisines_background-img {
@@ -484,6 +482,7 @@ Global
   width: 100%;
 }
 ._container {
+  
 }
 .alem-stages-header {
   display: flex;
@@ -522,8 +521,7 @@ Global
   margin-bottom: -5.5%;
 }
 
-.alem-stages-item {
-  
+.alem-stages-item { 
 
 }
 .alem-stages-item-container {
@@ -554,6 +552,63 @@ Global
 
 .alem-geography-item-img-mobile {
   display: none;
+}
+
+
+/* abenefits */
+.benefits {
+  width: 100%;
+}
+.benefits-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7%;
+}
+.benefits-header-text {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.benefits-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+._container {
+}
+.benefits-item {
+}
+.bisines-item1 {
+}
+.benefits-icon-img {
+  max-width: 100%;
+  height: auto;
+}
+.benefits-icon {
+  max-width: 100%;
+  height: auto;
+}
+.benefits-text {
+  max-width: 17.5rem;
+  height: auto;
+  margin-top: -10%;
+  margin-left: -5%;
+}
+.benefits-text-bold {
+}
+.text-bold {
+}
+.auto-bisines_background {
+  
+}
+.auto-bisines_background-img {
 }
 
 
@@ -843,8 +898,9 @@ Global
   height: auto;
   margin-right: 2rem;
 }
-.alem-geography-item-img {
-  
+
+.benefits_background {
+  display: none;
 }
 }
 
@@ -862,6 +918,9 @@ Global
   }
   .alem-geography {
     margin-top: 30%;
+  }
+  .benefits_background {
+    display: none;
   }
 }
 
@@ -890,12 +949,12 @@ Global
 
   
   .alem-header__contact-item-soc {
-    max-width: 2rem;
+    max-width: 2.3rem;
     height: auto;
     padding-right: 0rem;
   }
   .margin-soc {
-    padding-right: 3rem;
+    padding-right: 6rem;
   }
   .alem-header__contact-item-logo {
       width: 100%;
@@ -1114,14 +1173,9 @@ Global
   .body.lock {
     overflow: hidden;
   }
-
-
-
-
   .title-china {
     color: #F5F5F5;
   }
-  
 }
 
 
@@ -1132,23 +1186,18 @@ Global
   
   /* Заголовок */
   .alem-header_title {
-  
     margin-top: -1.3rem; 
-    
   }
   .alem-header_title-container1{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
   }
   .alem-header_title-container2 {
     display: flex;
     justify-content: center;
     padding-left: 50%;
     margin-top: -1.6rem; 
-  
-  
   }
   .alem-header_title1 {
     font-size: 3rem;
@@ -1176,6 +1225,10 @@ Global
   
   .alem-geography {
     margin-top: 80%;
+  }
+  .benefits-header-text {
+    text-align: center;
+    margin-bottom: 1rem;
   }
 }  
 

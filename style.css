@@ -313,7 +313,7 @@ Global
 }
 
 
-    /* auto-bisines */
+/* auto-bisines */
 
 
 .auto-bisines {
@@ -512,7 +512,6 @@ Global
   justify-content: center;
   margin-left: 50rem;
   margin-bottom: -5.5%;
-
 }
 .stages-left {
   display: flex;
@@ -538,7 +537,6 @@ Global
   height: 25rem;
   margin-left: 3%;
   margin-right: 3%;
-
 }
 .alem-stages-item-text-bold {
   font-size: 1.4rem;
@@ -572,8 +570,9 @@ Global
 
 .benefits-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 2;
 }
 .benefits_content {
   display: flex;
@@ -1256,9 +1255,7 @@ Global
     display: flex;
     justify-content: center;
     padding-left: 50%;
-    margin-top: 0.6rem; 
-  
-  
+    margin-top: 0.6rem;
   }
   .alem-header_title1 {
     font-size: 2.5rem;
@@ -1345,14 +1342,13 @@ Global
   .bisines-item2 {
     justify-content: center;
     align-items: start;
-    padding: 0;  
+    padding: 0;
   }
   
   .bisines-item3 {
     justify-content: center;
     align-items: start;
-    padding: 0; 
-  
+    padding: 0;
   }
 
   .alem-geography {
@@ -1371,6 +1367,31 @@ Global
   }
   .alem-geography {
     margin-top: 160%;
+  }
+  .benefits {
+    width: 100%;
+    overflow: hidden;
+  }
+  .benefits-icon-img {
+    max-width: 60%;
+    height: auto;
+  }
+  .benefits-icon {
+    max-width: 60%;
+    height: auto;
+  }
+  .benefits_content {
+    margin: 4%;
+  }
+}
+
+@media (max-width: 350px) {
+  .benefits-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    z-index: 2;
   }
 }
 

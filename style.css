@@ -44,7 +44,7 @@ Global
 
 
   ._container {
-    width: 100%;
+    width: 90%;
     max-width: 160rem;
     padding: 2rem 1.5rem;
   }
@@ -759,17 +759,12 @@ Global
   width: 100%;
   padding-bottom: 5%;
 }
-.cards-header {
-}
 .cards-header-text {
   font-size: 4rem;
   text-align: center;
   color: #363F5A;
   font-weight: 500;
   margin-top: 8rem;
-}
-
-.catalog-content {
 }
 .catalog_container {
   display: flex;
@@ -899,8 +894,6 @@ Global
       font-size: 13px;
   }
 }
-
-
 
 
 @media (max-width: 1760px) {

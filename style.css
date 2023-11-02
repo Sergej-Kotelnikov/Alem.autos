@@ -10,6 +10,7 @@ Global
   
   html {
     font-size: 62.5%;
+    width: 100%;
   }
   
   body {
@@ -33,11 +34,6 @@ Global
   background: #F5F5F5;
 }
   
-
-  main {
-    display: none;
-    
-  }
  
 
 
@@ -47,6 +43,8 @@ Global
     width: 90%;
     max-width: 160rem;
     padding: 2rem 1.5rem;
+    max-width: 100%;
+    height: auto;
   }
 .text-regilar {
   font-size: 1.4rem;
@@ -140,6 +138,7 @@ Global
   display: flex;
   justify-content: center;
   width: 100%;
+  z-index: 5;
 }
 .alem-header__menu-list {
   display: flex;
@@ -239,31 +238,29 @@ Global
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
   }
   .alem-main-wrapp {
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
   }
   .alem-main__container {
-    justify-content: center;
-    align-items: center;
     max-width: 162rem;
   }
-  ._container {
-  }
-
 
 
     /* About */
 
 
   .about {
+    z-index: 4;
    
 }
 .about_content {
@@ -316,7 +313,7 @@ Global
 
 
 .auto-bisines {
-  z-index: 10;
+  z-index: 4;
 }
 .auto-bisines-header {
   display: flex;
@@ -348,6 +345,7 @@ Global
   max-width: 100%;
   height: auto;
   overflow: hidden;
+  z-index: -1;
 
 }
 .auto-bisines-item {
@@ -617,6 +615,7 @@ Global
 
 .cards {
   width: 100%;
+  margin-top: 7%;
 }
 .cards-header {
   margin-bottom: 7%;
@@ -806,7 +805,9 @@ Global
   background-color: #F5F5F5;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 .other-slideshow {
@@ -965,7 +966,14 @@ Global
   color: #F5F5F5;
   font-size: 2rem;
   font-weight: 400;
+  margin-top: 2.5rem;
+}
+.contact-email-contact {
+  color: #F5F5F5;
+  font-size: 2rem;
+  font-weight: 400;
   margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
 }
 .alem-header__contact {
 }
@@ -982,6 +990,7 @@ Global
   color: #F5F5F5;
   font-size: 2rem;
   font-weight: 400;
+  margin-top: 3rem;
 }
 .contact__time-text {
   color: #F5F5F5;
@@ -1008,7 +1017,6 @@ Global
 	Footer 
 ====================== */
 
-/* Main Footer */
 footer .main-footer{	
   padding: 2rem 0;	background: #363F5A;
 }
@@ -1025,7 +1033,6 @@ footer ul{
   flex-wrap: wrap;
 }
 .footer-item {
-  margin-right: 6rem;
 }
 .footer-item:last-child {
   margin-right: 0rem;
@@ -1044,18 +1051,16 @@ footer ul{
   white-space: nowrap;
 }
 
-
-/* Footer Top */
 .footer-top{
   padding-bottom: 3rem;	
   margin-bottom: 3rem;	
 }
 
-
-/*==================== 
-	Widgets 
-====================== */
-.widget{	padding: 20px;	margin-bottom: 40px;}
+.widget{	
+  padding: 2rem;
+  margin-bottom: 4rem;
+  margin-right: 6rem;
+  }
 .widget.widget-last{	margin-bottom: 0px;}
 .widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
 	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
@@ -1074,6 +1079,7 @@ footer ul{
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 2rem;
+  margin-right: 6.5rem;
 }
 .footer-contact {
   display: flex;
@@ -1467,13 +1473,16 @@ footer ul{
     width: 90%;
     max-width: 100rem;
     padding: 2rem 1.5rem;
+    max-width: 100%;
+    height: auto;
   }
   .alem-main__content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    width: 100%;
+    height: auto;
   }
 .text-regilar {
   font-size: 1.2rem;
@@ -1491,7 +1500,6 @@ footer ul{
   font-weight: 500;
   margin-top: 8rem;
 }
-
 .alem-header_title1 {
   font-size: 6rem;
   color: #363F5A;
@@ -1500,7 +1508,6 @@ footer ul{
   display: inline-block;
   padding-right: 2rem;
 }
-
 .title-china {
   color: #F5F5F5;
 }
@@ -1513,14 +1520,12 @@ footer ul{
   align-items: center;
   padding: 0.2%;
 }
-
 .auto-bisines_background {
   z-index: -1;
   max-width: 70%;
   height: auto;
   display: flex;
   justify-content: center;
-  
   margin-top: -46rem;
 }
 .alem-geography {
@@ -1580,7 +1585,6 @@ footer ul{
   display: block;
   margin-right: auto;
   margin-bottom: 1rem;
-
 }
 
 .rewerse {
@@ -1630,9 +1634,12 @@ footer ul{
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.map {
+  min-width: 25.8rem;
 }
 .contact_title {
   display: flex;
@@ -1660,6 +1667,13 @@ footer ul{
   font-weight: 400;
   margin-bottom: 2rem;
 }
+.contact-email-contact {
+  color: #F5F5F5;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+}
 .alem-header__contact {
 }
 .contact-soc {
@@ -1678,19 +1692,42 @@ footer ul{
 }
 .contact__time-text {
   color: #F5F5F5;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-top: 0.5rem;
 }
 .contact__time-text-1 {
-  margin-top: 1rem;
+  margin-top: 1.6rem;
 }
 .contact-adres {
   color: #F5F5F5;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-top: 2rem;
 }
+
+
+
+  .footer-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 8rem;
+  }
+  .widget li a{
+    color: #F5F5F5;
+    font-size: 1.2rem;
+  }
+  .footer-item-title {
+    color: #F5F5F5;
+    font-size: 2rem;
+  }
+  .footer-item-contact-title {
+    color: #F5F5F5;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
 }
 
 
@@ -1735,7 +1772,7 @@ footer ul{
     max-height: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;    
+    background-size: cover;
   }
   .alem-header__contact-name-logo {
     font-size: 1.5rem;
@@ -1824,11 +1861,13 @@ footer ul{
   }
   .auto-bisines_content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    width: 100%;
     
   }
   .header-text {
@@ -2122,9 +2161,9 @@ footer ul{
   .auto-bisines_content {
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 0rem;
-    margin-bottom: 4rem; 
+    margin-bottom: 4rem;
   }
   .auto-bisines-item {
     display: flex;
@@ -2161,6 +2200,146 @@ footer ul{
     padding: 0;
   }
 
+
+
+  .cards {
+    width: 100%;
+  }
+  .cards-header {
+    margin-bottom: 7%;
+  }
+  .cards-header-text {
+    
+  }
+  .header-text {
+  }
+  .header-text-title {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+  .cards-wrapper {
+  }
+
+  .cards_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  .card-item {
+    margin-top: 2.5rem;
+    background-color: #F5F5F5;
+    border-radius: 2rem;
+    width: 30rem;
+    height: 60rem;
+    margin-right: auto;
+  }
+  .card-item:last-child {
+    margin-right: 0rem;
+  }
+  .card-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 30rem;
+    max-height: 22.5rem;
+    margin-top: 7rem;
+  }
+  .card-icon-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-name {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-name-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-name-name {
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 2rem;
+    background-color: #363F5A;
+    width: 10rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+  }
+  .card-wrapper-text {
+    width: 100%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .card-title {
+  }
+  .card-title-title {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .card-title-you-tube {
+  }
+  .card-title-you-tube-img {
+    margin-right: 1.5rem;
+  }
+  .card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    width: 100%;
+  }
+  .card-text-text {
+    color: #000;
+    font-size: 2rem;
+  }
+  .card-button {
+    padding: 1rem 5rem;
+    margin: 0rem 7rem;
+    margin-bottom: -7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background: #363F5A;
+  }
+  .card-button-background {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+
+
   .alem-geography {
     margin-top: 120%;
   }
@@ -2174,9 +2353,6 @@ footer ul{
     font-size: 1.2rem;
     color: #F5F5F5;
     font-weight: 500;
-  }
-  .alem-geography {
-    margin-top: 160%;
   }
   .benefits {
     width: 100%;

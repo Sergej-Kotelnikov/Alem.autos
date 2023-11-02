@@ -34,10 +34,6 @@ Global
   background: #F5F5F5;
 }
   
- 
-
-
-
 
   ._container {
     width: 90%;
@@ -65,26 +61,19 @@ Global
 
   /* Header */
 
-  .header-background {
+.header-background {
     background: url(img/Slide16_94.jpg);
     height: 110vh;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;    
-  }
+    background-size: cover;
+}
 
 .alem-header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.alem-header__container {
-  
-  
-}
-
-
-
 .alem-header__contact-name {
   display: flex;
   justify-content: left;
@@ -93,16 +82,11 @@ Global
   font-size: 2rem;
   color: #363F5A;
 }
-
 .alem-header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.2%;
-}
-
-.alem-header__content:last-child {
-  
 }
 .alem-header__contact {
   display: flex;
@@ -1079,7 +1063,7 @@ footer ul{
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 2rem;
-  margin-right: 6.5rem;
+  margin-right: 10rem;
 }
 .footer-contact {
   display: flex;
@@ -1088,10 +1072,20 @@ footer ul{
 .footer-item-contact {
   margin-bottom: 2rem;
 }
+
+.footer-item-contact a:hover{	
+  color: #4b92dc;
+  font-weight: 700;
+  transition: 0.3s;
+}
 .footer-item-contact-title {
   color: #F5F5F5;
   font-size: 2rem;
   font-weight: 400;
+}
+.boxis {
+  
+  margin-right: 40rem;
 }
 .typo-light h1, 
 .typo-light h2, 
@@ -1122,7 +1116,6 @@ footer ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 1rem;
   }
   .card-icon {
     display: flex;
@@ -1799,7 +1792,7 @@ footer ul{
       max-width: 6rem;
       height: auto;
       position: relative;
-      right: 30%;
+      right: 20%;
   }
 
   .alem-header__content {
@@ -2245,7 +2238,7 @@ footer ul{
     border-radius: 2rem;
     width: 30rem;
     height: 60rem;
-    margin-right: auto;
+    margin-right: 0;
   }
   .card-item:last-child {
     margin-right: 0rem;
@@ -2319,7 +2312,7 @@ footer ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .card-text {
     display: flex;
@@ -2378,6 +2371,9 @@ footer ul{
   }
   .benefits_content {
     margin: 4%;
+  }
+  .boxis {
+    margin-right: 4rem;
   }
 }
 

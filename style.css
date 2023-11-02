@@ -1930,9 +1930,16 @@ footer ul{
     justify-content: flex-end;
     margin-top: 3%;
     margin-bottom: 3%;
+    z-index: 15;
+
+
+        /*фиксируем бургер*/
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 100%;
   }
-  .container__menu {
-  }
+
 
   .header__burger {
     display: block;
@@ -1941,11 +1948,13 @@ footer ul{
     height: 20px;
     position: relative;
     z-index: 100;
+    margin-right: 4rem;
+    margin-top: 6rem;
   }
 
   .header__burger span {
     position: absolute;
-    background-color: #363F5A;
+    background-color: #4b92dc;
     position: absolute;
     left: 0;
     width: 100%;
@@ -1957,7 +1966,7 @@ footer ul{
   .header__burger:before,
   .header__burger:after {
     content: "";
-    background-color: #363F5A;
+    background-color: #4b92dc;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -1982,6 +1991,7 @@ footer ul{
     background-color: #F5F5F5;
     padding: 60px 10px 20px 100px;
     flex-wrap: wrap;
+    
   }
   .alem-header__menu.active {
     top: 0;

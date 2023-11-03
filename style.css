@@ -205,7 +205,7 @@ Global
 .alem-header_title2 {
   font-size: 18rem;
   font-weight: 900;
-  -webkit-text-stroke: 0.2rem #3653C7;
+  -webkit-text-stroke: 2px #3653C7;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -711,7 +711,9 @@ Global
   display: flex;
   justify-content: space-between;
   padding: 0 4rem;
+  margin-bottom: 0.5rem;
   width: 100%;
+  
 }
 .card-text-text {
   color: #000;
@@ -1099,6 +1101,17 @@ footer ul{
 .typo-light small{	color: #F5F5F5;}
 
 
+
+
+
+@media (max-width: 1800px) {
+  .card-text-text {
+    color: #000;
+    font-size: 2.4rem;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 1760px) {
   .card-item {
     margin-top: 2.5rem;
@@ -1210,16 +1223,6 @@ footer ul{
     font-weight: 700;
   }
 }
-
-
-@media (max-width: 1800px) {
-  .card-text-text {
-    color: #000;
-    font-size: 2.4rem;
-    white-space: nowrap;
-  }
-}
-
 @media (max-width: 1750px) {
   .alem-geography-item-text-container {
     border-radius: 5px;
@@ -1254,6 +1257,13 @@ footer ul{
   .card-button-title {
     white-space: nowrap;
   }
+}
+
+@media (max-width: 1700px) {
+   .alem-header_title1 {
+     color: #F5F5F5;
+   }
+
 }
 
 
@@ -1495,14 +1505,14 @@ footer ul{
 }
 .alem-header_title1 {
   font-size: 6rem;
-  color: #363F5A;
+  color: #F5F5F5;
   font-weight: 500;
   display: flex;
   display: inline-block;
   padding-right: 2rem;
 }
 .title-china {
-  color: #F5F5F5;
+  
 }
 
 
@@ -1792,7 +1802,7 @@ footer ul{
       max-width: 6rem;
       height: auto;
       position: relative;
-      right: 20%;
+      right: 5%;
   }
 
   .alem-header__content {
@@ -1908,6 +1918,10 @@ footer ul{
 }
 
 @media (max-width: 830px) {
+  .alem-header__content {
+    z-index: 20;
+    position: relative;
+  }
   .alem-header__menu {
     display: flex;
     justify-content: center;
@@ -2021,13 +2035,8 @@ footer ul{
   }
 }
 
-
-
 @media (max-width: 830px) {
 
-
-  
-  /* Заголовок */
   .alem-header_title {
     margin-top: -1.3rem; 
   }
@@ -2044,7 +2053,7 @@ footer ul{
   }
   .alem-header_title1 {
     font-size: 3rem;
-    color: #363F5A;
+    color: #F5F5F5;
     font-weight: 500;
     display: flex;
     display: inline-block;

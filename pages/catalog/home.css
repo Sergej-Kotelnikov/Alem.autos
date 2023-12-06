@@ -697,9 +697,7 @@ Global
     height: 78rem;
     margin-right: 4rem;
   }
-  .card-item:last-child {
-    margin-right: 0rem;
-  }
+
   .card-item-container {
     display: flex;
     justify-content: center;
@@ -1225,9 +1223,6 @@ Global
       height: 78rem;
       margin-right: 3rem;
     }
-    .card-item:last-child {
-      margin-right: 0rem;
-    }
     .card-item-container {
       display: flex;
       justify-content: center;
@@ -1353,9 +1348,6 @@ Global
       width: 36rem;
       height: 60rem;
       margin-right: 1.5rem;
-    }
-    .card-item:last-child {
-      margin-right: 0rem;
     }
     .card-name-name {
       color: #F5F5F5;
@@ -1811,9 +1803,6 @@ Global
       height: 60rem;
       margin-right: 0;
     }
-    .card-item:last-child {
-      margin-right: 0rem;
-    }
     .card-item-container {
       display: flex;
       justify-content: center;
@@ -1850,7 +1839,7 @@ Global
       font-family: Raleway;
       font-size: 2rem;
       background-color: #363F5A;
-      width: 10rem;
+      width: 20rem;
       height: 4.8rem;
       display: flex;
       justify-content: center;
@@ -2036,7 +2025,6 @@ Global
       font-size: 1rem;
       font-weight: 700;
     }
-
     .footer-item-title-copyright {
       font-size: 0.6rem;
       margin-left: 3rem;
@@ -2047,5 +2035,6 @@ Global
       white-space: wrap;
       width: 80%;
     }
+
 
   }

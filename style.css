@@ -26,14 +26,491 @@ Global
   ul {
     list-style: none;
   }
-  /* scrollbar*/
+
+    /* scrollbar*/
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
   background: #F5F5F5;
 }
+
+ /* preloader */
+  .mask-loader {
+    width: 100%;
+    height: 100%;
+    background: #363F5A;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    transition: 0.6s;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+}
+  .hide {
+    opacity: 0;
+  }
+  .logo-preloader {
+    color: #F5F5F5;
+    opacity: 0.4;
+    font-size: 3.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 29%;
+  }
+  .cssload-dots {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    outline: 1px solid red;
+    filter: url(#goo);
+      -o-filter: url(#goo);
+      -ms-filter: url(#goo);
+      -webkit-filter: url(#goo);
+      -moz-filter: url(#goo);
+  }
   
+  .cssload-dot {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .cssload-dot:before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 49px;
+    background: rgb(251,211,1);
+    position: absolute;
+    left: 50%;
+    transform: translateY(0);
+      -o-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+    margin-left: -17.5px;
+    margin-top: -17.5px;
+  }
+  
+  
+  
+  .cssload-dot:nth-child(5):before {
+    z-index: 100;
+    width: 44.5px;
+    height: 44.5px;
+    margin-left: -21.75px;
+    margin-top: -21.75px;
+    animation: cssload-dot-colors 4.6s ease infinite;
+      -o-animation: cssload-dot-colors 4.6s ease infinite;
+      -ms-animation: cssload-dot-colors 4.6s ease infinite;
+      -webkit-animation: cssload-dot-colors 4.6s ease infinite;
+      -moz-animation: cssload-dot-colors 4.6s ease infinite;
+  }
+  
+  
+  .cssload-dot:nth-child(1) {
+    animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+      -o-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+      -ms-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+      -webkit-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+      -moz-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+  }
+  .cssload-dot:nth-child(1):before {
+    background-color: rgb(255,50,112);
+    animation: cssload-dot-move 4.6s 0s ease infinite;
+      -o-animation: cssload-dot-move 4.6s 0s ease infinite;
+      -ms-animation: cssload-dot-move 4.6s 0s ease infinite;
+      -webkit-animation: cssload-dot-move 4.6s 0s ease infinite;
+      -moz-animation: cssload-dot-move 4.6s 0s ease infinite;
+  }
+  
+  .cssload-dot:nth-child(2) {
+    animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+      -o-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+      -ms-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+      -webkit-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+      -moz-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+  }
+  .cssload-dot:nth-child(2):before {
+    background-color: rgb(32,139,241);
+    animation: cssload-dot-move 4.6s 1.15s ease infinite;
+      -o-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+      -ms-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+      -webkit-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+      -moz-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+  }
+  
+  .cssload-dot:nth-child(3) {
+    animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+      -o-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+      -ms-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+      -webkit-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+      -moz-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+  }
+  .cssload-dot:nth-child(3):before {
+    background-color: rgb(175,225,2);
+    animation: cssload-dot-move 4.6s 2.3s ease infinite;
+      -o-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+      -ms-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+      -webkit-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+      -moz-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+  }
+  
+  .cssload-dot:nth-child(4) {
+    animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+      -o-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+      -ms-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+      -webkit-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+      -moz-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+  }
+  .cssload-dot:nth-child(4):before {
+    background-color: rgb(251,211,1);
+    animation: cssload-dot-move 4.6s 3.45s ease infinite;
+      -o-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+      -ms-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+      -webkit-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+      -moz-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+  }
+  
+  @keyframes cssload-dot-move {
+    0% {
+      transform: translateY(0);
+    }
+    18%, 22% {
+      transform: translateY(-68px);
+    }
+    40%, 100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @-o-keyframes cssload-dot-move {
+    0% {
+      -o-transform: translateY(0);
+    }
+    18%, 22% {
+      -o-transform: translateY(-68px);
+    }
+    40%, 100% {
+      -o-transform: translateY(0);
+    }
+  }
+  
+  @-ms-keyframes cssload-dot-move {
+    0% {
+      -ms-transform: translateY(0);
+    }
+    18%, 22% {
+      -ms-transform: translateY(-68px);
+    }
+    40%, 100% {
+      -ms-transform: translateY(0);
+    }
+  }
+  
+  @-webkit-keyframes cssload-dot-move {
+    0% {
+      -webkit-transform: translateY(0);
+    }
+    18%, 22% {
+      -webkit-transform: translateY(-68px);
+    }
+    40%, 100% {
+      -webkit-transform: translateY(0);
+    }
+  }
+  
+  @-moz-keyframes cssload-dot-move {
+    0% {
+      -moz-transform: translateY(0);
+    }
+    18%, 22% {
+      -moz-transform: translateY(-68px);
+    }
+    40%, 100% {
+      -moz-transform: translateY(0);
+    }
+  }
+  
+  @keyframes cssload-dot-colors {
+    0% {
+      background-color: rgb(251,211,1);
+    }
+    25% {
+      background-color: rgb(255,50,112);
+    }
+    50% {
+      background-color: rgb(32,139,241);
+    }
+    75% {
+      background-color: rgb(175,225,2);
+    }
+    100% {
+      background-color: rgb(251,211,1);
+    }
+  }
+  
+  @-o-keyframes cssload-dot-colors {
+    0% {
+      background-color: rgb(251,211,1);
+    }
+    25% {
+      background-color: rgb(255,50,112);
+    }
+    50% {
+      background-color: rgb(32,139,241);
+    }
+    75% {
+      background-color: rgb(175,225,2);
+    }
+    100% {
+      background-color: rgb(251,211,1);
+    }
+  }
+  
+  @-ms-keyframes cssload-dot-colors {
+    0% {
+      background-color: rgb(251,211,1);
+    }
+    25% {
+      background-color: rgb(255,50,112);
+    }
+    50% {
+      background-color: rgb(32,139,241);
+    }
+    75% {
+      background-color: rgb(175,225,2);
+    }
+    100% {
+      background-color: rgb(251,211,1);
+    }
+  }
+  
+  @-webkit-keyframes cssload-dot-colors {
+    0% {
+      background-color: rgb(251,211,1);
+    }
+    25% {
+      background-color: rgb(255,50,112);
+    }
+    50% {
+      background-color: rgb(32,139,241);
+    }
+    75% {
+      background-color: rgb(175,225,2);
+    }
+    100% {
+      background-color: rgb(251,211,1);
+    }
+  }
+  
+  @-moz-keyframes cssload-dot-colors {
+    0% {
+      background-color: rgb(251,211,1);
+    }
+    25% {
+      background-color: rgb(255,50,112);
+    }
+    50% {
+      background-color: rgb(32,139,241);
+    }
+    75% {
+      background-color: rgb(175,225,2);
+    }
+    100% {
+      background-color: rgb(251,211,1);
+    }
+  }
+  
+  @keyframes cssload-dot-rotate-1 {
+    0% {
+      transform: rotate(-105deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+  
+  @-o-keyframes cssload-dot-rotate-1 {
+    0% {
+      -o-transform: rotate(-105deg);
+    }
+    100% {
+      -o-transform: rotate(270deg);
+    }
+  }
+  
+  @-ms-keyframes cssload-dot-rotate-1 {
+    0% {
+      -ms-transform: rotate(-105deg);
+    }
+    100% {
+      -ms-transform: rotate(270deg);
+    }
+  }
+  
+  @-webkit-keyframes cssload-dot-rotate-1 {
+    0% {
+      -webkit-transform: rotate(-105deg);
+    }
+    100% {
+      -webkit-transform: rotate(270deg);
+    }
+  }
+  
+  @-moz-keyframes cssload-dot-rotate-1 {
+    0% {
+      -moz-transform: rotate(-105deg);
+    }
+    100% {
+      -moz-transform: rotate(270deg);
+    }
+  }
+  
+  @keyframes cssload-dot-rotate-2 {
+    0% {
+      transform: rotate(165deg);
+    }
+    100% {
+      transform: rotate(540deg);
+    }
+  }
+  
+  @-o-keyframes cssload-dot-rotate-2 {
+    0% {
+      -o-transform: rotate(165deg);
+    }
+    100% {
+      -o-transform: rotate(540deg);
+    }
+  }
+  
+  @-ms-keyframes cssload-dot-rotate-2 {
+    0% {
+      -ms-transform: rotate(165deg);
+    }
+    100% {
+      -ms-transform: rotate(540deg);
+    }
+  }
+  
+  @-webkit-keyframes cssload-dot-rotate-2 {
+    0% {
+      -webkit-transform: rotate(165deg);
+    }
+    100% {
+      -webkit-transform: rotate(540deg);
+    }
+  }
+  
+  @-moz-keyframes cssload-dot-rotate-2 {
+    0% {
+      -moz-transform: rotate(165deg);
+    }
+    100% {
+      -moz-transform: rotate(540deg);
+    }
+  }
+  
+  @keyframes cssload-dot-rotate-3 {
+    0% {
+      transform: rotate(435deg);
+    }
+    100% {
+      transform: rotate(810deg);
+    }
+  }
+  
+  @-o-keyframes cssload-dot-rotate-3 {
+    0% {
+      -o-transform: rotate(435deg);
+    }
+    100% {
+      -o-transform: rotate(810deg);
+    }
+  }
+  
+  @-ms-keyframes cssload-dot-rotate-3 {
+    0% {
+      -ms-transform: rotate(435deg);
+    }
+    100% {
+      -ms-transform: rotate(810deg);
+    }
+  }
+  
+  @-webkit-keyframes cssload-dot-rotate-3 {
+    0% {
+      -webkit-transform: rotate(435deg);
+    }
+    100% {
+      -webkit-transform: rotate(810deg);
+    }
+  }
+  
+  @-moz-keyframes cssload-dot-rotate-3 {
+    0% {
+      -moz-transform: rotate(435deg);
+    }
+    100% {
+      -moz-transform: rotate(810deg);
+    }
+  }
+  
+  @keyframes cssload-dot-rotate-4 {
+    0% {
+      transform: rotate(705deg);
+    }
+    100% {
+      transform: rotate(1080deg);
+    }
+  }
+  
+  @-o-keyframes cssload-dot-rotate-4 {
+    0% {
+      -o-transform: rotate(705deg);
+    }
+    100% {
+      -o-transform: rotate(1080deg);
+    }
+  }
+  
+  @-ms-keyframes cssload-dot-rotate-4 {
+    0% {
+      -ms-transform: rotate(705deg);
+    }
+    100% {
+      -ms-transform: rotate(1080deg);
+    }
+  }
+  
+  @-webkit-keyframes cssload-dot-rotate-4 {
+    0% {
+      -webkit-transform: rotate(705deg);
+    }
+    100% {
+      -webkit-transform: rotate(1080deg);
+    }
+  }
+  
+  @-moz-keyframes cssload-dot-rotate-4 {
+    0% {
+      -moz-transform: rotate(705deg);
+    }
+    100% {
+      -moz-transform: rotate(1080deg);
+    }
+  }
 
   ._container {
     width: 90%;
@@ -102,6 +579,10 @@ Global
 .contact-phone {
   font-size: 2rem;
   color: #363F5A;
+}
+.contact-phone:hover {
+  color: #4b92dc;
+  transition: 0.3s;
 }
 
 
@@ -219,19 +700,14 @@ Global
 
   /* Main */
   .alem-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
+
   }
   .alem-main-wrapp {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     overflow: hidden;
   }
@@ -249,21 +725,24 @@ Global
 }
 .about_content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  flex-wrap: wrap;
 }
 .about_content-item {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding-right: 5rem;
+  padding-top: 6rem;
+
 }
+
 .about_content-icon {
   height: 100%;
   max-height: 6rem;
   width: auto;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 .about_content-text {
     width: 100%;
@@ -281,21 +760,38 @@ Global
 .about_content-text-regilar {
 
 }
-.alem-main_gif {
 
- 
-}
-.alem-main_gif-img {
+/* anim text */
+.alem-main_gif {
   width: 100%;
   max-width: 100%;
   height: auto;
   min-height: 2.5rem;
+  margin:0 auto;
+  background: #363F5A;
+  color: #F5F5F5;
+  font-size: 3.2rem;
+}
+.alem-main_gif p{
+  text-align:center;
+  color:#fff;
+  text-transform: uppercase;
+  padding-top: 3.5rem;
+  animation: text 60s infinite linear;
+  padding-left: 100%;
+  white-space: nowrap;
+}
+@keyframes text {
+  0%{
+    transform: translate(0, 0);
+  }
+  
+  100%{
+    transform: translate(-160%, 0);
+  }
 }
 
-
 /* auto-bisines */
-
-
 .auto-bisines {
   z-index: 4;
 }
@@ -458,13 +954,19 @@ Global
   margin-left: -50%;
 }
 
+/* background auto */
+.alem-main_background {
+}
+.alem-main_background-img {
+  width: 100%;
+  height: auto;
+  min-height: 2.5rem;
+}
+
 /* stages */
 
 .alem-stages {
   width: 100%;
-}
-._container {
-  
 }
 .alem-stages-header {
   display: flex;
@@ -474,8 +976,6 @@ Global
 .alem-stages-header-text {
   text-align: center;
   margin-bottom: 8rem;
-}
-.header-text {
 }
 .alem-stages_content {
   display: flex;
@@ -499,18 +999,10 @@ Global
   margin-right: 59rem;
   margin-bottom: -5.5%;
 }
-
-.alem-stages-item { 
-
-}
 .alem-stages-item-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-}
-.alem-stages-item-img {
-}
-.alem-geography-item-img-img {
 }
 .alem-stages-item-text-container {
   width: 30rem;
@@ -600,6 +1092,10 @@ Global
 .cards {
   width: 100%;
   margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .cards-header {
   margin-bottom: 7%;
@@ -649,6 +1145,8 @@ Global
   width: 100%;
   max-width: 36rem;
   max-height: 22.5rem;
+  min-width: 36rem;
+  min-height: 21.5rem;
   margin-top: 7rem;
 }
 .card-icon-img {
@@ -666,11 +1164,13 @@ Global
   display: flex;
   justify-content: space-between;
 }
+.card-button-title {
+}
 .card-name-name {
   color: #F5F5F5;
   text-align: center;
   font-family: Raleway;
-  font-size: 40px;
+  font-size: 4rem;
   background-color: #363F5A;
   width: 35rem;
   height: 6.8rem;
@@ -678,6 +1178,11 @@ Global
   justify-content: center;
   align-items: center;
   border-radius: 0 1rem 1rem 0;
+}
+.card-name-name:hover {
+  color: #363F5A;
+  background-color: #4b92dc;
+  transition: 0.3s;
 }
 .card-wrapper-text {
   width: 100%;
@@ -692,7 +1197,7 @@ Global
 .card-title-title {
   color: #000;
   text-align: center;
-  font-size: 40px;
+  font-size: 4rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
@@ -700,6 +1205,11 @@ Global
 }
 .card-title-you-tube-img {
   margin-right: 1.5rem;
+}
+.card-title-you-tube-img:hover {
+  background-color: #4b92dc;
+  transition: 0.3s;
+  border-radius: 1rem;
 }
 .card-text-container {
   display: flex;
@@ -713,11 +1223,19 @@ Global
   padding: 0 4rem;
   margin-bottom: 0.5rem;
   width: 100%;
-  
+  color: #000;
+  font-size: 2.5rem;
+}
+.card-text:hover {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  color: #4b92dc;
+  transition: 0.3s;
 }
 .card-text-text {
-  color: #000;
-  font-size: 32px;
 }
 .card-button {
   padding: 1rem 5rem;
@@ -728,6 +1246,10 @@ Global
   border-radius: 1rem;
   background: #363F5A;
 }
+.card-button:hover {
+  background: #4b92dc;
+  transition: 0.3s;
+}
 .card-button-background {
   color: #F5F5F5;
   text-align: center;
@@ -735,6 +1257,31 @@ Global
   font-weight: 700;
 }
 
+.card-button-catalog {
+  padding: 1rem 5rem;
+  margin-top: 8rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: #F5F5F5;
+  max-width: 70rem;
+}
+.card-button-catalog:hover {
+  background: #4b92dc;
+  transition: 0.3s;
+}
+.card-button-title-catalog {
+  font-size: 4rem;
+  text-align: center;
+  color: #363F5A;
+  font-weight: 500;
+}
+.card-button-title-catalog:hover {
+  font-size: 4rem;
+  text-align: center;
+  color: #F5F5F5;
+  font-weight: 500;
+}
 
 /* catalog */
 
@@ -954,12 +1501,18 @@ Global
   font-weight: 400;
   margin-top: 2.5rem;
 }
+.contact-phone-contact:hover {
+  color: #4b92dc;
+}
 .contact-email-contact {
   color: #F5F5F5;
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
+}
+.contact-email-contact:hover {
+  color: #4b92dc;
 }
 .alem-header__contact {
 }
@@ -992,6 +1545,9 @@ Global
   font-size: 2rem;
   font-weight: 400;
   margin-top: 2.5rem;
+}
+.contact-adres:hover {
+  color: #4b92dc;
 }
 .contact__social {
 }
@@ -1066,6 +1622,10 @@ footer ul{
   font-weight: 400;
   margin-bottom: 2rem;
   margin-right: 10rem;
+}
+.title-hover:hover {
+  color: #4b92dc;
+  transition: 0.3s;
 }
 .footer-contact {
   display: flex;
@@ -1158,7 +1718,7 @@ footer ul{
     color: #F5F5F5;
     text-align: center;
     font-family: Raleway;
-    font-size: 40px;
+    font-size: 4rem;
     background-color: #363F5A;
     width: 35rem;
     height: 6.8rem;
@@ -1180,7 +1740,7 @@ footer ul{
   .card-title-title {
     color: #000;
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
@@ -1204,7 +1764,7 @@ footer ul{
   }
   .card-text-text {
     color: #000;
-    font-size: 32px;
+    font-size: 2.2rem;
     white-space: nowrap;
   }
   .card-button {
@@ -1306,8 +1866,8 @@ footer ul{
     color: #000;
     text-align: center;
     font-size: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
   }
   .card-title-you-tube {
   }
@@ -1328,9 +1888,9 @@ footer ul{
     white-space: nowrap;
   }
   .card-text-text {
-    color: #000;
-    font-size: 2rem;
-    white-space: nowrap;
+      color: #000;
+      font-size: 1.8rem;
+      white-space: nowrap;
   }
   .card-button {
     padding: 1rem 5rem;
@@ -1358,9 +1918,6 @@ footer ul{
 
 @media (max-width: 1500px) {
 
-  .alem-geography {
-    margin-top: 8rem;
-  }
   /* stages */
   .alem-stages {
     width: 90%;
@@ -1443,6 +2000,9 @@ footer ul{
 }
 
 @media (max-width: 1300px) {
+
+
+ 
   
   .alem-stages-item-text-container {
     width: 18rem;
@@ -1531,9 +2091,7 @@ footer ul{
   justify-content: center;
   margin-top: -46rem;
 }
-.alem-geography {
-  margin-top: 18rem;
-}
+
 .alem-geography-item-text {
   font-size: 1.4rem;
   color: #F5F5F5;
@@ -1731,10 +2289,37 @@ footer ul{
     font-size: 1.2rem;
     font-weight: 400;
   }
+  .footer-item-title-copyright {
+    font-size: 0.6rem;
+    align-items: center;
+    color: #F5F5F5;
+    padding: 2%;
+    white-space: wrap;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }
 
 
 @media (max-width: 1100px) {
+
+  .about_content {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .about_content-item {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about_content-icon {
+    height: 100%;
+    max-height: 4rem;
+    width: 4rem;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .auto-bisines_background {
     z-index: -1;
     width: 90rem;
@@ -1745,9 +2330,7 @@ footer ul{
     
     margin-top: -46rem;
   }
-  .alem-geography {
-    margin-top: 30%;
-  }
+
   .benefits_background {
     display: none;
   }
@@ -1761,6 +2344,13 @@ footer ul{
     width: 36rem;
     height: 60rem;
     margin-right: 0rem;
+  }
+
+  .card-button-title-catalog {
+    font-size: 2rem;
+    text-align: center;
+    color: #363F5A;
+    font-weight: 500;
   }
 }
 
@@ -1884,7 +2474,7 @@ footer ul{
     color: #F5F5F5;
   }
   .alem-geography-item-flag {
-    max-width: 10rem;
+    max-width: 17rem;
     width: 100%;
     height: auto;
     margin-left: 3%;
@@ -1892,14 +2482,12 @@ footer ul{
     z-index: 2;
   }
   .alem-geography-item-flag-img {
-    max-width: 10rem;
+    max-width: 17rem;
     width: 100%;
     height: auto;
     z-index: 2;
   }
-  .alem-geography {
-    margin-top: 30rem;
-  }
+
   .alem-geography-item-background {
     display: flex;
     position: absolute;
@@ -2075,9 +2663,19 @@ footer ul{
     color: #F5F5F5;
   }
   
-  .alem-geography {
-    margin-top: 80%;
+  .alem-main_gif {
+    font-size: 1.6rem;
   }
+  .alem-main_gif p{
+    text-align:center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-top: 3.5rem;
+    animation: text 25s infinite linear;
+    padding-left: 100%;
+    white-space: nowrap;
+  }
+
   .benefits-header-text {
     text-align: center;
     margin-bottom: 1rem;
@@ -2092,7 +2690,20 @@ footer ul{
   }
 }  
 
+@media (max-width: 700px) {
+  .card-icon {
+      min-width: 50%;
+      min-height: auto;
+    }
+    .boxis {
+      margin-right: 4rem;
+    }
+}
+
 @media (max-width: 500px) {
+  .catalog-item {
+    margin-right: 1rem;
+  }
   .header-background {
     background: url(img/mobile.jpg);
     height: 100vh;
@@ -2104,7 +2715,7 @@ footer ul{
 
   /* Заголовок */
   .alem-header_title {
-    margin-top: 70%;
+    margin-top: 90%;
   }
   .alem-header_title-container1{
     display: flex;
@@ -2138,7 +2749,36 @@ footer ul{
     -webkit-text-fill-color: #F5F5F5;
   }
   .title-china {
-    color: #363F5A;
+    color: #F5F5F5;
+  }
+
+  .alem-geography-item-flag {
+    max-width: 10rem;
+    width: 10rem;
+    height: auto;
+    margin-left: 3%;
+    margin-right: -12%;
+    z-index: 2;
+  }
+  .alem-geography-item-flag-img {
+    max-width: 10rem;
+    width: 10rem;
+    height: auto;
+    z-index: 2;
+  }
+  .alem-geography-item-text-container {
+    border-radius: 5px;
+    background: #363F5A;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 10% 5%;
+    text-align: left;
+    min-width: 12rem;
   }
   
   .about_content  {
@@ -2331,7 +2971,7 @@ footer ul{
   }
   .card-text-text {
     color: #000;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .card-button {
     padding: 1rem 5rem;
@@ -2350,11 +2990,6 @@ footer ul{
     font-weight: 700;
   }
 
-
-
-  .alem-geography {
-    margin-top: 120%;
-  }
   .alem-geography-item-text {
     font-size: 1.2rem;
     color: #F5F5F5;
@@ -2385,6 +3020,48 @@ footer ul{
     margin-right: 4rem;
   }
 }
+@media (max-width: 400px) {
+  .alem-header_title {
+    margin-top: 88%;
+   }
+
+}
+@media (max-width: 375px) {
+  .alem-geography-item-text-container {
+    border-radius: 5px;
+    background: #363F5A;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 10% 5%;
+    text-align: left;
+    min-width: auto;
+  }
+  .alem-geography-item-text {
+    font-size: 1rem;
+  }
+  .alem-geography-item-text-bold {
+    font-size: 1rem;
+  }
+  .alem-geography-item-flag {
+    max-width: 8rem;
+    width: 8rem;
+    height: auto;
+    margin-left: 3%;
+    margin-right: -12%;
+    z-index: 2;
+  }
+  .alem-geography-item-flag-img {
+    max-width: 8rem;
+    width: 8rem;
+    height: auto;
+    z-index: 2;
+  }
+}
 
 @media (max-width: 350px) {
   .benefits-wrapper {
@@ -2394,8 +3071,179 @@ footer ul{
     flex-wrap: wrap;
     z-index: 2;
   }
+  .header-background {
+    background: url(img/mobile.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;    
+    overflow: hidden;
+  }
+} 
+
+@media (max-width: 319px) {
+  .contact__container {
+    margin-right: 8rem;
+  }
+  .cards {
+    width: 100%;
+  }
+  .cards-header {
+    margin-bottom: 7%;
+  }
+  .header-text-title {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+  .cards_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card-item {
+    margin-top: 2.5rem;
+    background-color: #F5F5F5;
+    border-radius: 2rem;
+    width: 26rem;
+    height: 50rem;
+    margin-right: 0;
+  }
+  .card-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 30rem;
+    max-height: 22.5rem;
+    margin-top: 7rem;
+  }
+  .card-icon-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-name {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-name-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-name-name {
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.8rem;
+    background-color: #363F5A;
+    width: 16rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+  }
+  .card-wrapper-text {
+    width: 100%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .card-title-title {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .card-title-you-tube-img {
+    margin-right: 1.5rem;
+  }
+  .card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    width: 100%;
+  }
+  .card-text-text {
+    color: #000;
+    font-size: 1rem;
+  }
+  .card-button {
+    padding: 1rem 5rem;
+    margin: 0rem 7rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background: #363F5A;
+  }
+  .card-button-background {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .card-button-title-catalog {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #363F5A;
+    font-weight: 500;
+  }
+  .footer-item-title-copyright {
+    font-size: 0.6rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+    color: #F5F5F5;
+    padding: 2%;
+    white-space: wrap;
+    width: 80%;
+  }
+
 }
 
+  @media (max-width: 300px) {
+    .margin-soc {
+      padding-right: 2rem;
+    }
+    .alem-header__contact-item-logo {
+      right: 10%;
+    }
+    .alem-header__contact-name-logo {
+      font-size: 1rem;
+    }
+    .title-china {
+      color: #F5F5F5;
+  }
+}
 
- 
-
+@media (max-width: 265px) {
+  .alem-geography-item-flag {
+    display: none;
+  }
+  .alem-geography-item-flag-img {
+    display: none;
+  }
+}

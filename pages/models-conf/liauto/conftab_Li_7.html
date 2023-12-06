@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">>
+      <meta name="author" content="Alem.Autos" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>Li Auto L7_configurations</title>
+      <link rel="shortcut icon" href="/img/favicon.ico">
+    <style type="text/css">
+            table {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        white-space: normal;
+      }
+            td th {
+        white-space: normal;
+        flex-wrap: wrap;
+        max-width: 4rem;
+      }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      
+      td.style6 { vertical-align:middle; text-align:left; padding-left:18px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style6 { vertical-align:middle; text-align:left; padding-left:18px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style7 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style7 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style8 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style8 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style9 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style9 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style11 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style11 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style12 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style12 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style13 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style13 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style14 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style14 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style15 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style15 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style16 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style16 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style17 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style17 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style18 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style18 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style19 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style19 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style20 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style20 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style21 { vertical-align:top; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style21 { vertical-align:top; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style22 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style22 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style23 { vertical-align:top; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style23 { vertical-align:top; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style24 { vertical-align:bottom; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      th.style24 { vertical-align:bottom; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:16pt; background-color:#f5f5f5 }
+      td.style25 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#FFFFFF; font-family:'Raleway'; font-size:22pt; background-color:#363F5A }
+      th.style25 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#FFFFFF; font-family:'Raleway'; font-size:22pt; background-color:#363F5A }
+      td.style26 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#363F5A; font-family:'Raleway'; font-size:18pt; background-color:#f5f5f5 }
+      th.style26 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#363F5A; font-family:'Raleway'; font-size:18pt; background-color:#f5f5f5 }
+      
+      @media (max-width: 950px) {
+        .conf-container {
+      margin-left: 2%;
+      padding-left: 50%;
+      z-index: 3;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #363F5A;
+    }
+
+      /* horizontal scroll table */
+      .conf-content {
+        overflow: auto;
+        position: relative;
+
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .conf-container {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      }
+      @media (max-width: 660px) {
+        .conf-container {
+      margin-left: 1%;
+      padding-left: 80%;
+      z-index: 6;
+    }
+  }
+  @media (max-width: 550px) {
+        .conf-container {
+      margin-left: 1%;
+      padding-left: 130%;
+      z-index: 6;
+    }
+  }
+    @media (max-width: 390px) {
+        .conf-container {
+      margin-left: 1%;
+      padding-left: 40%;
+      z-index: 6;
+      left: 0;
+      padding-top: 2rem;
+    }
+  
+
+      td.style6 { vertical-align:middle; text-align:left; padding-left:18px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style6 { vertical-align:middle; text-align:left; padding-left:18px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style7 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style7 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style8 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style8 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style9 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style9 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style11 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style11 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style12 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style12 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style13 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style13 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style14 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style14 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style15 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style15 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style16 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style16 { vertical-align:top; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style17 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style17 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style18 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style18 { vertical-align:top; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style19 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style19 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style20 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      th.style20 { vertical-align:middle; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color:#f5f5f5 }
+      td.style21 { vertical-align:top; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size: 1rem; background-color:#f5f5f5 }
+      th.style21 { vertical-align:top; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size: 1rem; background-color:#f5f5f5 }
+      td.style22 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size: 1rem; background-color:#f5f5f5 }
+      th.style22 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size: 1rem; background-color:#f5f5f5 }
+      td.style23 { vertical-align:top; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size: 1rem; background-color:#f5f5f5 }
+      th.style23 { vertical-align:top; text-align:left; padding-left:9px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size: 1rem; background-color:#f5f5f5 }
+      td.style24 { vertical-align:bottom; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size: 1rem; background-color:#f5f5f5 }
+      th.style24 { vertical-align:bottom; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#363F5A; font-family:'Raleway'; font-size: 1rem; background-color:#f5f5f5 }
+      td.style25 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#FFFFFF; font-family:'Raleway'; font-size:1rem; background-color:#363F5A }
+      th.style25 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#FFFFFF; font-family:'Raleway'; font-size:1rem; background-color:#363F5A }
+      td.style26 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color: #f5f5f5 }
+      th.style26 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#363F5A; font-family:'Raleway'; font-size:1rem; background-color: #f5f5f5 }
+    }
+    @media (max-width: 350px) {
+        .conf-container {
+      margin-left: 1%;
+      padding-left: 80%;
+      z-index: 6;
+      left: 0;
+
+    }
+     .conf-content {
+      padding-top: 2rem;
+     }
+  }
+
+    </style>
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(95645690, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/95645690" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  </head>
+
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <col class="col4">
+        <tbody>
+          <tr class="row0">
+            <td class="column1 style26 s"></td>
+            <td class="column2 style26 s">Li L7 Air</td>
+            <td class="column3 style26 s">Li L7 Pro</td>
+            <td class="column4 style26 s">Li L7 Max</td>
+          </tr>
+          <tr class="row1">
+            <td class="column1 style25 s style25" colspan="4">Основная информация</td>
+          </tr>
+          <tr class="row2">
+            <td class="column1 style7 s">Официальная цена в Китае (CN¥)</td>
+            <td class="column2 style8 s">319 800 CN¥</td>
+            <td class="column3 style8 s">339 800 CN¥</td>
+            <td class="column4 style8 s">379 800 CN¥</td>
+          </tr>
+          <tr class="row3">
+            <td class="column1 style7 s">Производитель</td>
+            <td class="column2 style9 s">Li Xiang auto</td>
+            <td class="column3 style9 s">Li Xiang auto</td>
+            <td class="column4 style9 s">Li Xiang auto</td>
+          </tr>
+          <tr class="row4">
+            <td class="column1 style10 s">Уровень</td>
+            <td class="column2 style9 s">Средний и большой внедорожник</td>
+            <td class="column3 style9 s">Средний и большой внедорожник</td>
+            <td class="column4 style9 s">Средний и большой внедорожник</td>
+          </tr>
+          <tr class="row5">
+            <td class="column1 style7 s">Тип энергии</td>
+            <td class="column2 style9 s">Расширенный диапазон</td>
+            <td class="column3 style9 s">Расширенный диапазон</td>
+            <td class="column4 style9 s">Расширенный диапазон</td>
+          </tr>
+          <tr class="row6">
+            <td class="column1 style7 s">Год и месяц выпуска</td>
+            <td class="column2 style9 s">2023.02</td>
+            <td class="column3 style9 s">2022.09</td>
+            <td class="column4 style9 s">2022.09</td>
+          </tr>
+          <tr class="row7">
+            <td class="column1 style10 s">Электрический двигатель</td>
+            <td class="column2 style9 s">Расширенный запас хода 449 лошадиных сил</td>
+            <td class="column3 style9 s">Расширенный запас хода 449 лошадиных сил</td>
+            <td class="column4 style9 s">Расширенный запас хода 449 лошадиных сил</td>
+          </tr>
+          <tr class="row8">
+            <td class="column1 style7 s">Запас хода на электротяге (км) </td>
+            <td class="column2 style11 n">175</td>
+            <td class="column3 style11 n">175</td>
+            <td class="column4 style11 n">175</td>
+          </tr>
+          <tr class="row9">
+            <td class="column1 style7 s">Запас хода на электротяге (км)WLTC</td>
+            <td class="column2 style11 n">175</td>
+            <td class="column3 style11 n">175</td>
+            <td class="column4 style11 n">175</td>
+          </tr>
+          <tr class="row10">
+            <td class="column1 style7 s">Запас хода на электротяге (км) CLTC</td>
+            <td class="column2 style11 n">210</td>
+            <td class="column3 style11 n">210</td>
+            <td class="column4 style11 n">210</td>
+          </tr>
+          <tr class="row11">
+            <td class="column1 style7 s">Полный запас хода (км)WLTC</td>
+            <td class="column2 style11 n">1100</td>
+            <td class="column3 style11 n">1100</td>
+            <td class="column4 style11 n">1100</td>
+          </tr>
+          <tr class="row12">
+            <td class="column1 style7 s">Полный запас хода (км)CLTC</td>
+            <td class="column2 style11 n">1315</td>
+            <td class="column3 style11 n">1315</td>
+            <td class="column4 style11 n">1315</td>
+          </tr>
+          <tr class="row13">
+            <td class="column1 style7 s">Время зарядки (часы)</td>
+            <td class="column2 style9 s">Быстрая зарядка 0,5 часа, медленная зарядка 6,5 часов.</td>
+            <td class="column3 style9 s">Быстрая зарядка 0,5 часа, медленная зарядка 6,5 часов.</td>
+            <td class="column4 style9 s">Быстрая зарядка 0,5 часа, медленная зарядка 6,5 часов.</td>
+          </tr>
+          <tr class="row14">
+            <td class="column1 style7 s">Емкость быстрой зарядки (%)</td>
+            <td class="column2 style8 s">20-80</td>
+            <td class="column3 style8 s">20-80</td>
+            <td class="column4 style8 s">20-80</td>
+          </tr>
+          <tr class="row15">
+            <td class="column1 style7 s">Максимальная мощность (кВт)</td>
+            <td class="column2 style8 s">330(449Пс)</td>
+            <td class="column3 style8 s">330(449Пс)</td>
+            <td class="column4 style8 s">330(449Пс)</td>
+          </tr>
+          <tr class="row16">
+            <td class="column1 style7 s">Максимальный крутящий момент (Н·м)</td>
+            <td class="column2 style11 n">620</td>
+            <td class="column3 style11 n">620</td>
+            <td class="column4 style12 null"></td>
+          </tr>
+          <tr class="row17">
+            <td class="column1 style7 s">коробка передач</td>
+            <td class="column2 style9 s">Односкоростная коробка передач для электромобиля</td>
+            <td class="column3 style9 s">Односкоростная коробка передач для электромобиля</td>
+            <td class="column4 style9 s">Односкоростная коробка передач для электромобиля</td>
+          </tr>
+          <tr class="row18">
+            <td class="column1 style7 s">Длина х ширина х высота (мм)</td>
+            <td class="column2 style8 s">5050x1995x1750</td>
+            <td class="column3 style8 s">5050x1995x1750</td>
+            <td class="column4 style8 s">5050x1995x1750</td>
+          </tr>
+          <tr class="row19">
+            <td class="column1 style7 s">Максимальная скорость (км/ч)</td>
+            <td class="column2 style11 n">180</td>
+            <td class="column3 style11 n">180</td>
+            <td class="column4 style11 n">180</td>
+          </tr>
+          <tr class="row20">
+            <td class="column1 style7 s">Время разгона до 100 километров(с)</td>
+            <td class="column2 style9 s">5.3</td>
+            <td class="column3 style9 s">5.3</td>
+            <td class="column4 style9 s">5.3</td>
+          </tr>
+          <tr class="row21">
+            <td class="column1 style7 s">Потребление электроэнергии на 100 километров (кВтч/100км)</td>
+            <td class="column2 style9 s">21,9 кВтч</td>
+            <td class="column3 style9 s">21,9 кВтч</td>
+            <td class="column4 style9 s">21,9 кВтч</td>
+          </tr>
+          <tr class="row22">
+            <td class="column1 style7 s">Расход топлива в эквиваленте электроэнергии (л/100 км)</td>
+            <td class="column2 style13 n">2.48</td>
+            <td class="column3 style13 n">2.48</td>
+            <td class="column4 style13 n">2.48</td>
+          </tr>
+          <tr class="row23">
+            <td class="column1 style7 s">Минимальный расход топлива (л/100 км) WLTC</td>
+            <td class="column2 style14 n">7.6</td>
+            <td class="column3 style14 n">7.6</td>
+            <td class="column4 style14 n">7.6</td>
+          </tr>
+          <tr class="row24">
+            <td class="column1 style7 s">Гарантийный срок автомобиля</td>
+            <td class="column2 style9 s">5 лет или 100 000 км</td>
+            <td class="column3 style9 s">5 лет или 100 000 км</td>
+            <td class="column4 style9 s">5 лет или 100 000 км</td>
+          </tr>
+          <tr class="row25">
+            <td class="column1 style7 s">Ориентировочная общая стоимость технического обслуживания на протяжении 60 000 км</td>
+            <td class="column2 style9 null"></td>
+            <td class="column3 style8 s">6174,0 юаней</td>
+            <td class="column4 style8 s">6174,0 юаней</td>
+          </tr>
+          <tr class="row26">
+            <td class="column1 style25 s style25" colspan="4">Габариты</td>
+          </tr>
+          <tr class="row27">
+            <td class="column1 style7 s">Длина (мм)</td>
+            <td class="column2 style15 n">5050</td>
+            <td class="column3 style15 n">5050</td>
+            <td class="column4 style15 n">5050</td>
+          </tr>
+          <tr class="row28">
+            <td class="column1 style7 s">Ширина (мм)</td>
+            <td class="column2 style9 n">1995</td>
+            <td class="column3 style9 n">1995</td>
+            <td class="column4 style9 n">1995</td>
+          </tr>
+          <tr class="row29">
+            <td class="column1 style7 s">Высота (мм)</td>
+            <td class="column2 style9 n">1750</td>
+            <td class="column3 style9 n">1750</td>
+            <td class="column4 style9 n">1750</td>
+          </tr>
+          <tr class="row30">
+            <td class="column1 style7 s">Колесная база (мм)</td>
+            <td class="column2 style15 n">3005</td>
+            <td class="column3 style15 n">3005</td>
+            <td class="column4 style15 n">3005</td>
+          </tr>
+          <tr class="row31">
+            <td class="column1 style7 s">Передняя колесная база (мм)</td>
+            <td class="column2 style8 n">1725</td>
+            <td class="column3 style8 n">1725</td>
+            <td class="column4 style8 n">1725</td>
+          </tr>
+          <tr class="row32">
+            <td class="column1 style7 s">Задняя колесная база (мм)</td>
+            <td class="column2 style9 n">1741</td>
+            <td class="column3 style9 n">1741</td>
+            <td class="column4 style9 n">1741</td>
+          </tr>
+          <tr class="row33">
+            <td class="column1 style7 s">Конструкция кузова</td>
+            <td class="column2 style9 s">внедорожник</td>
+            <td class="column3 style9 s">внедорожник</td>
+            <td class="column4 style9 s">внедорожник</td>
+          </tr>
+          <tr class="row34">
+            <td class="column1 style7 s">Количество дверей (количество)</td>
+            <td class="column2 style11 n">5</td>
+            <td class="column3 style11 n">5</td>
+            <td class="column4 style11 n">5</td>
+          </tr>
+          <tr class="row35">
+            <td class="column1 style7 s">Способ открытия двери автомобиля</td>
+            <td class="column2 style8 s">распашная дверь</td>
+            <td class="column3 style8 s">распашная дверь</td>
+            <td class="column4 style8 s">распашная дверь</td>
+          </tr>
+          <tr class="row36">
+            <td class="column1 style7 s">Количество мест (мест)</td>
+            <td class="column2 style15 n">5</td>
+            <td class="column3 style15 n">5</td>
+            <td class="column4 style15 n">5</td>
+          </tr>
+          <tr class="row37">
+            <td class="column1 style7 s">Снаряженная масса (кг)</td>
+            <td class="column2 style15 n">2450</td>
+            <td class="column3 style15 n">2450</td>
+            <td class="column4 style15 n">2460</td>
+          </tr>
+          <tr class="row38">
+            <td class="column1 style7 s">Масса полной загрузки (кг)</td>
+            <td class="column2 style15 n">3080</td>
+            <td class="column3 style15 n">3080</td>
+            <td class="column4 style15 n">3080</td>
+          </tr>
+          <tr class="row39">
+            <td class="column1 style7 s">Объем топливного бака (л)</td>
+            <td class="column2 style16 n">65.0</td>
+            <td class="column3 style16 n">65.0</td>
+            <td class="column4 style16 n">65.0</td>
+          </tr>
+          <tr class="row40">
+            <td class="column1 style7 s">Объем багажного отделения (л)</td>
+            <td class="column2 style11 n">801</td>
+            <td class="column3 style11 n">801</td>
+            <td class="column4 style11 n">801</td>
+          </tr>
+          <tr class="row41">
+            <td class="column1 style25 s style25" colspan="4">Двигатель</td>
+          </tr>
+          <tr class="row42">
+            <td class="column1 style7 s">Инженерная модель</td>
+            <td class="column2 style9 s">Л2Э15М</td>
+            <td class="column3 style9 s">Л2Э15М</td>
+            <td class="column4 style9 s">Л2Э15М</td>
+          </tr>
+          <tr class="row43">
+            <td class="column1 style7 s">Объем (мл)</td>
+            <td class="column2 style15 n">1496</td>
+            <td class="column3 style15 n">1496</td>
+            <td class="column4 style15 n">1496</td>
+          </tr>
+          <tr class="row44">
+            <td class="column1 style7 s">Смещение (л)</td>
+            <td class="column2 style16 n">1.5</td>
+            <td class="column3 style16 n">1.5</td>
+            <td class="column4 style16 n">1.5</td>
+          </tr>
+          <tr class="row45">
+            <td class="column1 style7 s">Форма приема расположение цилиндров</td>
+            <td class="column2 style9 s">турбонаддув</td>
+            <td class="column3 style9 s">турбонаддув</td>
+            <td class="column4 style9 s">турбонаддув</td>
+          </tr>
+          <tr class="row46">
+            <td class="column1 style7 s">Форма компоновки двигателя</td>
+            <td class="column2 style9 s">горизонтальный</td>
+            <td class="column3 style9 s">горизонтальный</td>
+            <td class="column4 style9 s">горизонтальный</td>
+          </tr>
+          <tr class="row47">
+            <td class="column1 style7 s">Расположение цилиндров</td>
+            <td class="column2 style9 s">л</td>
+            <td class="column3 style9 s">л</td>
+            <td class="column4 style9 s">л</td>
+          </tr>
+          <tr class="row48">
+            <td class="column1 style7 s">Количество цилиндров (число)</td>
+            <td class="column2 style11 n">4</td>
+            <td class="column3 style11 n">4</td>
+            <td class="column4 style11 n">4</td>
+          </tr>
+          <tr class="row49">
+            <td class="column1 style7 s">Количество клапанов на цилиндр (число)</td>
+            <td class="column2 style11 n">4</td>
+            <td class="column3 style11 n">4</td>
+            <td class="column4 style11 n">4</td>
+          </tr>
+          <tr class="row50">
+            <td class="column1 style7 s">Коэффициент сжатия</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row51">
+            <td class="column1 style7 s">Подача воздуха</td>
+            <td class="column2 style9 s">ДОХК </td>
+            <td class="column3 style9 s">ДОХК</td>
+            <td class="column4 style9 s">ДОХК</td>
+          </tr>
+          <tr class="row52">
+            <td class="column1 style7 s">Максимальная мощность (Лс)</td>
+            <td class="column2 style11 n">154</td>
+            <td class="column3 style11 n">154</td>
+            <td class="column4 style11 n">154</td>
+          </tr>
+          <tr class="row53">
+            <td class="column1 style7 s">Максимальная мощность (кВт)</td>
+            <td class="column2 style11 n">113</td>
+            <td class="column3 style11 n">113</td>
+            <td class="column4 style11 n">113</td>
+          </tr>
+          <tr class="row54">
+            <td class="column1 style7 s">Максимальная скорость мощности (об/мин)</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row55">
+            <td class="column1 style7 s">Максимальный крутящий момент (Н·м)</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row56">
+            <td class="column1 style7 s">Максимальная скорость крутящего момента (об/мин)</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row57">
+            <td class="column1 style7 s">Тепловой КПД двигателя (%)</td>
+            <td class="column2 style14 n">40.5</td>
+            <td class="column3 style14 n">40.5</td>
+            <td class="column4 style14 n">40.5</td>
+          </tr>
+          <tr class="row58">
+            <td class="column1 style7 s">Специальная технология двигателя</td>
+            <td class="column2 style9 null"></td>
+            <td class="column3 style9 null"></td>
+            <td class="column4 style9 null"></td>
+          </tr>
+          <tr class="row59">
+            <td class="column1 style7 s">форма топлива</td>
+            <td class="column2 style9 s">Расширенный диапазон </td>
+            <td class="column3 style9 s">Расширенный диапазон</td>
+            <td class="column4 style9 s">Расширенный диапазон</td>
+          </tr>
+          <tr class="row60">
+            <td class="column1 style7 s">Марка топлива</td>
+            <td class="column2 style9 n">95</td>
+            <td class="column3 style9 n">95</td>
+            <td class="column4 style9 n">95</td>
+          </tr>
+          <tr class="row61">
+            <td class="column1 style10 s">Способ подачи топлива</td>
+            <td class="column2 style9 s">Непосредственный впрыск в цилиндр</td>
+            <td class="column3 style9 s">Непосредственный впрыск в цилиндр</td>
+            <td class="column4 style9 s">Непосредственный впрыск в цилиндр</td>
+          </tr>
+          <tr class="row62">
+            <td class="column1 style7 s">Материал головки блока цилиндров</td>
+            <td class="column2 style8 s">алюминий</td>
+            <td class="column3 style8 s">алюминий</td>
+            <td class="column4 style8 s">алюминий</td>
+          </tr>
+          <tr class="row63">
+            <td class="column1 style7 s">Материал цилиндра</td>
+            <td class="column2 style9 s">алюминий</td>
+            <td class="column3 style9 s">алюминий</td>
+            <td class="column4 style9 s">алюминий</td>
+          </tr>
+          <tr class="row64">
+            <td class="column1 style7 s">Стандарты охраны окружающей среды</td>
+            <td class="column2 style8 s">Страна VI б</td>
+            <td class="column3 style8 s">Страна VI б</td>
+            <td class="column4 style8 s">Страна VI б</td>
+          </tr>
+          <tr class="row65">
+            <td class="column1 style25 s style25" colspan="4">Электрический двигатель</td>
+          </tr>
+          <tr class="row66">
+            <td class="column1 style10 s">Описание двигателя</td>
+            <td class="column2 style9 s">Расширенный запас хода 449 лошадиных сил</td>
+            <td class="column3 style9 s">Расширенный запас хода 449 лошадиных сил</td>
+            <td class="column4 style9 s">Расширенный запас хода 449 лошадиных сил</td>
+          </tr>
+          <tr class="row67">
+            <td class="column1 style10 s">Тип двигателя</td>
+            <td class="column2 style9 s">Постоянный магнит/синхронный</td>
+            <td class="column3 style9 s">Постоянный магнит/синхронный</td>
+            <td class="column4 style9 s">Постоянный магнит/синхронный</td>
+          </tr>
+          <tr class="row68">
+            <td class="column1 style7 s">Общая мощность двигателя (кВт)</td>
+            <td class="column2 style11 n">330</td>
+            <td class="column3 style11 n">330</td>
+            <td class="column4 style11 n">330</td>
+          </tr>
+          <tr class="row69">
+            <td class="column1 style7 s">Общая мощность двигателя (Ps)</td>
+            <td class="column2 style11 n">449</td>
+            <td class="column3 style11 n">449</td>
+            <td class="column4 style11 n">449</td>
+          </tr>
+          <tr class="row70">
+            <td class="column1 style7 s">Общий крутящий момент двигателя (Н·м)</td>
+            <td class="column2 style11 n">620</td>
+            <td class="column3 style11 n">620</td>
+            <td class="column4 style11 n">620</td>
+          </tr>
+          <tr class="row71">
+            <td class="column1 style7 s">Максимальная мощность переднего электродвигателя (кВт) электродвигателя (Н·м)</td>
+            <td class="column2 style15 n">130</td>
+            <td class="column3 style15 n">130</td>
+            <td class="column4 style15 n">130</td>
+          </tr>
+          <tr class="row72">
+            <td class="column1 style7 s">Максимальная мощность заднего электродвигателя (кВт)</td>
+            <td class="column2 style15 n">200</td>
+            <td class="column3 style15 n">200</td>
+            <td class="column4 style15 n">200</td>
+          </tr>
+          <tr class="row73">
+            <td class="column1 style7 s">Максимальный крутящий момент заднего электродвигателя (Н·м)</td>
+            <td class="column2 style15 n">400</td>
+            <td class="column3 style15 n">400</td>
+            <td class="column4 style15 n">400</td>
+          </tr>
+          <tr class="row74">
+            <td class="column1 style7 s">Комплексная мощность системы (кВт)</td>
+            <td class="column2 style11 n">330</td>
+            <td class="column3 style11 n">330</td>
+            <td class="column4 style11 n">330</td>
+          </tr>
+          <tr class="row75">
+            <td class="column1 style7 s">Комплексный крутящий момент системы (Н·м)</td>
+            <td class="column2 style11 n">620</td>
+            <td class="column3 style11 n">620</td>
+            <td class="column4 style11 n">620</td>
+          </tr>
+          <tr class="row76">
+            <td class="column1 style7 s">Количество приводных двигателей</td>
+            <td class="column2 style8 s">Двойной двигатель</td>
+            <td class="column3 style8 s">Двойной двигатель</td>
+            <td class="column4 style8 s">Двойной двигатель</td>
+          </tr>
+          <tr class="row77">
+            <td class="column1 style7 s">Компоновка двигателя</td>
+            <td class="column2 style9 s">Передний + задний</td>
+            <td class="column3 style9 s">Передний + задний</td>
+            <td class="column4 style9 s">Передний + задний</td>
+          </tr>
+          <tr class="row78">
+            <td class="column1 style25 s style25" colspan="4">Зарядка аккумуляторов</td>
+          </tr>
+          <tr class="row79">
+            <td class="column1 style10 s">Тип батареи</td>
+            <td class="column2 style9 s">Тройная литиевая батарея</td>
+            <td class="column3 style8 s">Тройная литиевая батарея</td>
+            <td class="column4 style8 s">Тройная литиевая батарея</td>
+          </tr>
+          <tr class="row80">
+            <td class="column1 style7 s">Особенности батареи Технология</td>
+            <td class="column2 style9 s">Использование огнестойких материалов и технологии защиты от термического разгона.</td>
+            <td class="column3 style9 s">Использование огнестойких материалов и технологии защиты от термического разгона.</td>
+            <td class="column4 style9 s">Использование огнестойких материалов и технологии защиты от термического разгона.</td>
+          </tr>
+          <tr class="row81">
+            <td class="column1 style7 s">Марка аккумулятора</td>
+            <td class="column2 style9 s">энергия улья</td>
+            <td class="column3 style9 s">Эпоха Ниндэ</td>
+            <td class="column4 style9 s">Эпоха Ниндэ</td>
+          </tr>
+          <tr class="row82">
+            <td class="column1 style7 s">Гарантия на аккумуляторную батарею</td>
+            <td class="column2 style9 s">8 лет или 160 000 км.</td>
+            <td class="column3 style9 s">8 лет или 160 000 км.</td>
+            <td class="column4 style9 s">8 лет или 160 000 км.</td>
+          </tr>
+          <tr class="row83">
+            <td class="column1 style7 s">Емкость аккумулятора (кВтч)</td>
+            <td class="column2 style14 n">42.8</td>
+            <td class="column3 style14 n">42.8</td>
+            <td class="column4 style14 n">42.8</td>
+          </tr>
+          <tr class="row84">
+            <td class="column1 style7 s">Плотность энергии аккумулятора (Втч/кг)</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row85">
+            <td class="column1 style17 s style17" rowspan="2">Зарядка аккумуляторов</td>
+            <td class="column2 style9 s">Быстрая зарядка 0,5 часа, медленная зарядка 6,5 часов.</td>
+            <td class="column3 style9 s">Быстрая зарядка 0,5 часа, медленная зарядка 6,5 часов.</td>
+            <td class="column4 style9 s">Быстрая зарядка 0,5 часа, медленная зарядка 6,5 часов.</td>
+          </tr>
+          <tr class="row86">
+            <td class="column2 style9 s">Интерфейс быстрой зарядки</td>
+            <td class="column3 style9 s">Интерфейс быстрой зарядки</td>
+            <td class="column4 style9 s">Интерфейс быстрой зарядки</td>
+          </tr>
+          <tr class="row87">
+            <td class="column1 style7 s">Максимальная мощность быстрой зарядки (кВт)</td>
+            <td class="column2 style11 n">75</td>
+            <td class="column3 style11 n">75</td>
+            <td class="column4 style11 n">75</td>
+          </tr>
+          <tr class="row88">
+            <td class="column1 style7 s">Расположение интерфейса быстрой зарядки</td>
+            <td class="column2 style8 s">Правый топливный бак</td>
+            <td class="column3 style8 s">Правый топливный бак</td>
+            <td class="column4 style8 s">Правый топливный бак</td>
+          </tr>
+          <tr class="row89">
+            <td class="column1 style7 s">Расположение интерфейса медленной зарядки</td>
+            <td class="column2 style8 s">Правый топливный бак</td>
+            <td class="column3 style8 s">Правый топливный бак</td>
+            <td class="column4 style8 s">Правый топливный бак</td>
+          </tr>
+          <tr class="row90">
+            <td class="column1 style17 s style18" rowspan="2">Система управления температурой аккумулятора</td>
+            <td class="column2 style8 s">Низкотемпературное отопление</td>
+            <td class="column3 style8 s">Низкотемпературное отопление</td>
+            <td class="column4 style8 s">Низкотемпературное отопление</td>
+          </tr>
+          <tr class="row91">
+            <td class="column2 style9 s">жидкостное охлаждение</td>
+            <td class="column3 style9 s">жидкостное охлаждение</td>
+            <td class="column4 style9 s">жидкостное охлаждение</td>
+          </tr>
+          <tr class="row92">
+            <td class="column1 style7 s">Режим одной педали</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row93">
+            <td class="column1 style7 s">Функции мобильной электростанции вертикального взлета и посадки</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row94">
+            <td class="column1 style7 s">Минимально допустимое значение внешнего сброса (%)</td>
+            <td class="column2 style11 n">20</td>
+            <td class="column3 style11 n">20</td>
+            <td class="column4 style11 n">20</td>
+          </tr>
+          <tr class="row95">
+            <td class="column1 style25 s style25" colspan="4">Коробка передач</td>
+          </tr>
+          <tr class="row96">
+            <td class="column1 style7 s">Описание коробки передач</td>
+            <td class="column2 style9 s">Односкоростная коробка передач для электромобиля</td>
+            <td class="column3 style9 s">Односкоростная коробка передач для электромобиля</td>
+            <td class="column4 style9 s">Односкоростная коробка передач для электромобиля</td>
+          </tr>
+          <tr class="row97">
+            <td class="column1 style7 s">Количество передач</td>
+            <td class="column2 style15 n">1</td>
+            <td class="column3 style15 n">1</td>
+            <td class="column4 style15 n">1</td>
+          </tr>
+          <tr class="row98">
+            <td class="column1 style7 s">Тип коробки передач</td>
+            <td class="column2 style9 s">коробка передач с фиксированным передаточным числом</td>
+            <td class="column3 style9 s">коробка передач с фиксированным передаточным числом</td>
+            <td class="column4 style9 s">коробка передач с фиксированным передаточным числом</td>
+          </tr>
+          <tr class="row99">
+            <td class="column1 style25 s style25" colspan="4">Шасси/рулевое управление</td>
+          </tr>
+          <tr class="row100">
+            <td class="column1 style10 s">Режим вождения</td>
+            <td class="column2 style9 s">Двухмоторный полный привод</td>
+            <td class="column3 style9 s">Двухмоторный полный привод</td>
+            <td class="column4 style9 s">Двухмоторный полный привод</td>
+          </tr>
+          <tr class="row101">
+            <td class="column1 style10 s">Тип полного привода</td>
+            <td class="column2 style9 s">Электрический полный привод</td>
+            <td class="column3 style9 s">Электрический полный привод</td>
+            <td class="column4 style9 s">Электрический полный привод</td>
+          </tr>
+          <tr class="row102">
+            <td class="column1 style7 s">форма передней подвески</td>
+            <td class="column2 style9 s">Независимая подвеска на двойных поперечных рычагах</td>
+            <td class="column3 style9 s">Независимая подвеска на двойных поперечных рычагах</td>
+            <td class="column4 style9 s">Независимая подвеска на двойных поперечных рычагах</td>
+          </tr>
+          <tr class="row103">
+            <td class="column1 style10 s">Форма задней подвески</td>
+            <td class="column2 style9 s">Многорычажная независимая подвеска</td>
+            <td class="column3 style9 s">Многорычажная независимая подвеска</td>
+            <td class="column4 style9 s">Многорычажная независимая подвеска</td>
+          </tr>
+          <tr class="row104">
+            <td class="column1 style7 s">Тип рулевого управления</td>
+            <td class="column2 style9 s">электрический ассистент</td>
+            <td class="column3 style9 s">электрический ассистент</td>
+            <td class="column4 style9 s">электрический ассистент</td>
+          </tr>
+          <tr class="row105">
+            <td class="column1 style7 s">Конструкция кузова</td>
+            <td class="column2 style9 s">Несущая</td>
+            <td class="column3 style9 s">Несущая</td>
+            <td class="column4 style9 s">Несущая</td>
+          </tr>
+          <tr class="row106">
+            <td class="column1 style25 s style25" colspan="4">Колеса/тормоза</td>
+          </tr>
+          <tr class="row107">
+            <td class="column1 style7 s">Тип переднего тормоза</td>
+            <td class="column2 style9 s">вентилируемый диск</td>
+            <td class="column3 style9 s">вентилируемый диск</td>
+            <td class="column4 style9 s">вентилируемый диск</td>
+          </tr>
+          <tr class="row108">
+            <td class="column1 style7 s">Тип заднего тормоза</td>
+            <td class="column2 style9 s">вентилируемый диск</td>
+            <td class="column3 style9 s">вентилируемый диск</td>
+            <td class="column4 style9 s">вентилируемый диск</td>
+          </tr>
+          <tr class="row109">
+            <td class="column1 style7 s">Тип стояночного тормоза</td>
+            <td class="column2 style9 s">Электронная парковка</td>
+            <td class="column3 style9 s">Электронная парковка</td>
+            <td class="column4 style9 s">Электронная парковка</td>
+          </tr>
+          <tr class="row110">
+            <td class="column1 style7 s">Размер передних шин</td>
+            <td class="column2 style9 s">255/50R20</td>
+            <td class="column3 style9 s">255/50R20</td>
+            <td class="column4 style9 s">255/50R20</td>
+          </tr>
+          <tr class="row111">
+            <td class="column1 style7 s">Размер задней шины</td>
+            <td class="column2 style9 s">255/50R20</td>
+            <td class="column3 style9 s">255/50R20</td>
+            <td class="column4 style9 s">255/50R20</td>
+          </tr>
+          <tr class="row112">
+            <td class="column1 style7 s">Характеристики запасного колеса</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row113">
+            <td class="column1 style7 s">Размещение запасного колеса</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row114">
+            <td class="column1 style25 s style25" colspan="4">Активная безопасность</td>
+          </tr>
+          <tr class="row115">
+            <td class="column1 style10 s">АБС антиблокировочная</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row116">
+            <td class="column1 style7 s">Распределение тормозного усилия (EBD/CBC и т. д.)</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row117">
+            <td class="column1 style7 s">Усилитель торможения (EBA/BA и т. д.)</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row118">
+            <td class="column1 style7 s">Контроль тяги (TCS/ASR и т. д.)</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row119">
+            <td class="column1 style7 s">Система стабилизации кузова (ESP/DSC и т. д.)</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row120">
+            <td class="column1 style17 s style17" rowspan="5">Активная система оповещения безопасности</td>
+            <td class="column2 style11 s">движения</td>
+            <td class="column3 style11 s">движения</td>
+            <td class="column4 style11 s">движения</td>
+          </tr>
+          <tr class="row121">
+            <td class="column2 style9 s">предупреждение о лобовом столкновении движения</td>
+            <td class="column3 style9 s">предупреждение о лобовом столкновении движения</td>
+            <td class="column4 style9 s">предупреждение о лобовом столкновении движения</td>
+          </tr>
+          <tr class="row122">
+            <td class="column2 style9 s">предупреждение о столкновении сзади</td>
+            <td class="column3 style9 s">предупреждение о столкновении сзади</td>
+            <td class="column4 style9 s">предупреждение о столкновении сзади</td>
+          </tr>
+          <tr class="row123">
+            <td class="column2 style9 s">предупреждение обратной стороны</td>
+            <td class="column3 style9 s">предупреждение обратной стороны</td>
+            <td class="column4 style9 s">предупреждение обратной стороны</td>
+          </tr>
+          <tr class="row124">
+            <td class="column2 style9 s">предупреждение об открытии ДОУ</td>
+            <td class="column3 style9 s">предупреждение об открытии ДОУ</td>
+            <td class="column4 style9 s">предупреждение об открытии ДОУ</td>
+          </tr>
+          <tr class="row125">
+            <td class="column1 style10 s">Активное торможение</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row126">
+            <td class="column1 style10 s">Параллельная помощь</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row127">
+            <td class="column1 style7 s">Система помощи при удержании полосы движения</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row128">
+            <td class="column1 style10 s">Центрирование полосы движения</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row129">
+            <td class="column1 style10 s">Советы по вождению при усталости</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row130">
+            <td class="column1 style7 s">Активное обнаружение усталости DMS</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row131">
+            <td class="column1 style7 s">Обнаружение жизненно важных функций в автомобиле</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row132">
+            <td class="column1 style10 s">Распознавание дорожных знаков</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row133">
+            <td class="column1 style10 s">Идентификация светофора</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row134">
+            <td class="column1 style7 s">Система ночного видения</td>
+            <td class="column2 style11 s">-</td>
+            <td class="column3 style11 s">-</td>
+            <td class="column4 style11 s">-</td>
+          </tr>
+          <tr class="row135">
+            <td class="column1 style25 s style25" colspan="4">Пассивная безопасность</td>
+          </tr>
+          <tr class="row136">
+            <td class="column1 style17 s style17" rowspan="2">передняя подушка безопасности</td>
+            <td class="column2 style9 s">Водительское место</td>
+            <td class="column3 style9 s">Водительское место</td>
+            <td class="column4 style9 s">Водительское место</td>
+          </tr>
+          <tr class="row137">
+            <td class="column2 style9 s">Пассажирское место</td>
+            <td class="column3 style9 s">Пассажирское место</td>
+            <td class="column4 style9 s">Пассажирское место</td>
+          </tr>
+          <tr class="row138">
+            <td class="column1 style17 s style17" rowspan="2">боковая подушка безопасности</td>
+            <td class="column2 style9 s">Передний ряд </td>
+            <td class="column3 style9 s">Передний ряд </td>
+            <td class="column4 style9 s">Передний ряд </td>
+          </tr>
+          <tr class="row139">
+            <td class="column2 style9 s">Задний ряд</td>
+            <td class="column3 style9 s">Задний ряд</td>
+            <td class="column4 style9 s">Задний ряд</td>
+          </tr>
+          <tr class="row140">
+            <td class="column1 style10 s">боковые шторки безопасности</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row141">
+            <td class="column1 style7 s">Передняя коленная подушка безопасности</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row142">
+            <td class="column1 style7 s">центральная подушка безопасности</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row143">
+            <td class="column1 style7 s">Напоминание о непристегнутом ремне безопасности</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row144">
+            <td class="column1 style7 s">система контроля давления в шинах</td>
+            <td class="column2 style9 s">Индикация давления в шинах</td>
+            <td class="column3 style9 s">Индикация давления в шинах</td>
+            <td class="column4 style9 s">Индикация давления в шинах</td>
+          </tr>
+          <tr class="row145">
+            <td class="column1 style7 s">пассивная защита пешеходов</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row146">
+            <td class="column1 style7 s">безопасные шины</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row147">
+            <td class="column1 style25 s style25" colspan="4">Вспомогательная/управляющая конфигурация</td>
+          </tr>
+          <tr class="row148">
+            <td class="column1 style18 s style18" rowspan="2">парковочный радар</td>
+            <td class="column2 style9 s">вперед</td>
+            <td class="column3 style9 s">вперед</td>
+            <td class="column4 style9 s">вперед</td>
+          </tr>
+          <tr class="row149">
+            <td class="column2 style9 s">назад</td>
+            <td class="column3 style9 s">назад</td>
+            <td class="column4 style9 s">назад</td>
+          </tr>
+          <tr class="row150">
+            <td class="column1 style7 s">Предупреждение об отъезде впереди идущего автомобиля</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row151">
+            <td class="column1 style17 s style17" rowspan="3">Изображения помощи при вождении</td>
+            <td class="column2 style9 s">Обратное изображение</td>
+            <td class="column3 style9 s">Обратное изображение</td>
+            <td class="column4 style9 s">Обратное изображение</td>
+          </tr>
+          <tr class="row152">
+            <td class="column2 style9 s">Панорамное изображение 360°</td>
+            <td class="column3 style9 s">Панорамное изображение 360°</td>
+            <td class="column4 style9 s">Панорамное изображение 360°</td>
+          </tr>
+          <tr class="row153">
+            <td class="column2 style9 s">прозрачное изображение</td>
+            <td class="column3 style9 s">прозрачное изображение</td>
+            <td class="column4 style9 s">прозрачное изображение</td>
+          </tr>
+          <tr class="row154">
+            <td class="column1 style17 s style17" rowspan="3">круизная система</td>
+            <td class="column2 style9 s">круиз-контроль</td>
+            <td class="column3 style9 s">круиз-контроль</td>
+            <td class="column4 style9 s">круиз-контроль</td>
+          </tr>
+          <tr class="row155">
+            <td class="column2 style9 s">адаптивный круиз</td>
+            <td class="column3 style9 s">адаптивный круиз</td>
+            <td class="column4 style9 s">адаптивный круиз</td>
+          </tr>
+          <tr class="row156">
+            <td class="column2 style9 s">Полноскоростной адаптивный круиз</td>
+            <td class="column3 style9 s">Полноскоростной адаптивный круиз</td>
+            <td class="column4 style9 s">Полноскоростной адаптивный круиз</td>
+          </tr>
+          <tr class="row157">
+            <td class="column1 style7 s">Ассистент автоматической смены полосы движения</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row158">
+            <td class="column1 style7 s">Автоматический выезд (въезд) на рампу</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row159">
+            <td class="column1 style7 s">Уровень помощи при вождении</td>
+            <td class="column2 style8 s">уровень L2</td>
+            <td class="column3 style8 s">уровень L2</td>
+            <td class="column4 style8 s">уровень L2</td>
+          </tr>
+          <tr class="row160">
+            <td class="column1 style10 s">Автоматическая парковка</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row161">
+            <td class="column1 style7 s">Следуйте по тропе и поверните назад</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row162">
+            <td class="column1 style7 s">парковка памяти</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row163">
+            <td class="column1 style7 s">Автоматическая парковка (AUTOHOLD)</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row164">
+            <td class="column1 style7 s">Система помощи при подъеме на холм (HAC)</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row165">
+            <td class="column1 style10 s">Спуск с холма (HDC)</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row166">
+            <td class="column1 style7 s">Технология старт-стоп двигателя</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row167">
+            <td class="column1 style10 s">Плавная регулировка подвески</td>
+            <td class="column2 style9 s">Мягкий и твердый</td>
+            <td class="column3 style9 s">Мягкий и твердый + высокий и низкий</td>
+            <td class="column4 style9 s">Мягкий и твердый + высокий и низкий</td>
+          </tr>
+          <tr class="row168">
+            <td class="column1 style10 s">пневматическая подвеска</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row169">
+            <td class="column1 style7 s">Электромагнитная индукционная подвеска</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row170">
+            <td class="column1 style7 s">Умная подвеска «Волшебный ковер»</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row171">
+            <td class="column1 style7 s">рулевого управления</td>
+            <td class="column2 style8 null">-</td>
+            <td class="column3 style8 null">-</td>
+            <td class="column4 style8 null">-</td>
+          </tr>
+          <tr class="row172">
+            <td class="column1 style7 s">Режим повышенного трения переднего моста</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row173">
+            <td class="column1 style7 s">Режим ограниченного скольжения заднего моста</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row174">
+            <td class="column1 style7 s">Функция блокировки межосевого дифференциала</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row175">
+            <td class="column1 style7 s">низкоскоростной полный привод</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row176">
+            <td class="column1 style7 s">Интегрированная активная система рулевого управления</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row177">
+            <td class="column1 style17 s style17" rowspan="5">Выбор режима вождения</td>
+            <td class="column2 style9 s">виды спорта</td>
+            <td class="column3 style9 s">виды спорта</td>
+            <td class="column4 style9 s">виды спорта</td>
+          </tr>
+          <tr class="row178">
+            <td class="column2 style9 s">внедорожный</td>
+            <td class="column3 style9 s">внедорожный</td>
+            <td class="column4 style9 s">внедорожный</td>
+          </tr>
+          <tr class="row179">
+            <td class="column2 style9 s">снег</td>
+            <td class="column3 style9 s">снег</td>
+            <td class="column4 style9 s">снег</td>
+          </tr>
+          <tr class="row180">
+            <td class="column2 style9 s">ЭКО/Экономика</td>
+            <td class="column3 style9 s">ЭКО/Экономика</td>
+            <td class="column4 style9 s">ЭКО/Экономика</td>
+          </tr>
+          <tr class="row181">
+            <td class="column2 style9 s">Стандартная комфорт</td>
+            <td class="column3 style9 s">Стандартная комфорт</td>
+            <td class="column4 style9 s">Стандартная комфорт</td>
+          </tr>
+          <tr class="row182">
+            <td class="column1 style7 s">система рекуперации энергии торможения</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row183">
+            <td class="column1 style7 s">Звук предупреждения о движении на низкой скорости</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row184">
+            <td class="column1 style25 s style25" colspan="4">Внешняя конфигурация</td>
+          </tr>
+          <tr class="row185">
+            <td class="column1 style7 s">Тип мансардного окна</td>
+            <td class="column2 style9 s">Сегментированная неоткрывающаяся панорамная крыша.</td>
+            <td class="column3 style9 s">Сегментированная неоткрывающаяся панорамная крыша.</td>
+            <td class="column4 style9 s">Сегментированная неоткрывающаяся панорамная крыша.</td>
+          </tr>
+          <tr class="row186">
+            <td class="column1 style7 s">Светочувствительный тент</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row187">
+            <td class="column1 style7 s">багажник на крыше</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row188">
+            <td class="column1 style7 s">Пакет спортивного внешнего вида</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row189">
+            <td class="column1 style7 s">Электрический спойлер</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row190">
+            <td class="column1 style7 s">Активное закрывание решетки воздухозаборника</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row191">
+            <td class="column1 style7 s">Диски из алюминиевого сплава</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row192">
+            <td class="column1 style7 s">боковые педали автомобиля</td>
+            <td class="column2 style9 s">электрический</td>
+            <td class="column3 style9 s">электрический</td>
+            <td class="column4 style9 s">электрический</td>
+          </tr>
+          <tr class="row193">
+            <td class="column1 style7 s">Безрамная дизайнерская дверь</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row194">
+            <td class="column1 style10 s">Скрытая дверная ручка</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row195">
+            <td class="column1 style7 s">прицепное устройство</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row196">
+            <td class="column1 style25 s style25" colspan="4">Внутренняя конфигурация</td>
+          </tr>
+          <tr class="row197">
+            <td class="column1 style7 s">Материал рулевого колеса</td>
+            <td class="column2 style9 s">Натуральная кожа</td>
+            <td class="column3 style9 s">Натуральная кожа</td>
+            <td class="column4 style9 s">Натуральная кожа</td>
+          </tr>
+          <tr class="row198">
+            <td class="column1 style19 s">Электрическая регулировка руля</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row199">
+            <td class="column1 style20 s style20" rowspan="3">Функции рулевого колеса</td>
+            <td class="column2 style9 s">Многопрофильное управление</td>
+            <td class="column3 style9 s">Многопрофильное управление</td>
+            <td class="column4 style9 s">Многопрофильное управление</td>
+          </tr>
+          <tr class="row200">
+            <td class="column2 style9 s">Память</td>
+            <td class="column3 style9 s">Память</td>
+            <td class="column4 style9 s">Память</td>
+          </tr>
+          <tr class="row201">
+            <td class="column2 style9 s">обогрев</td>
+            <td class="column3 style9 s">обогрев</td>
+            <td class="column4 style9 s">обогрев</td>
+          </tr>
+          <tr class="row202">
+            <td class="column1 style21 s">Экран компьютера вождения</td>
+            <td class="column2 style8 s">цвет</td>
+            <td class="column3 style8 s">цвет</td>
+            <td class="column4 style8 s">цвет</td>
+          </tr>
+          <tr class="row203">
+            <td class="column1 style21 s">Стиль ЖК-прибора</td>
+            <td class="column2 style8 s">Полный ЖК-дисплей</td>
+            <td class="column3 style8 s">Полный ЖК-дисплей</td>
+            <td class="column4 style8 s">Полный ЖК-дисплей</td>
+          </tr>
+          <tr class="row204">
+            <td class="column1 style21 s">Размер ЖК-метра (дюймы)</td>
+            <td class="column2 style8 n">4.82</td>
+            <td class="column3 style8 n">4.82</td>
+            <td class="column4 style8 n">4.82</td>
+          </tr>
+          <tr class="row205">
+            <td class="column1 style25 s style25" colspan="4">Конфигурация &quot;Комфорт/Антивор&quot;</td>
+          </tr>
+          <tr class="row206">
+            <td class="column1 style21 s">Электрическая всасывающая дверца</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row207">
+            <td class="column1 style19 s">Электрическая задняя дверь</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row208">
+            <td class="column1 style19 s">Датчик задней двери багажника</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row209">
+            <td class="column1 style21 s">Электрическая память положения задней двери багажника</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row210">
+            <td class="column1 style21 s">Электронная противоугонная система двигателя</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row211">
+            <td class="column1 style19 s">Центральный замок в машине</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row212">
+            <td class="column1 style20 s style20" rowspan="2">Тип удаленного ключа</td>
+            <td class="column2 style8 s">Умный дистанционный ключ</td>
+            <td class="column3 style8 s">Умный дистанционный ключ</td>
+            <td class="column4 style8 s">Умный дистанционный ключ</td>
+          </tr>
+          <tr class="row213">
+            <td class="column2 style8 s">Bluetooth-ключ мобильного телефона</td>
+            <td class="column3 style8 s">Bluetooth-ключ мобильного телефона</td>
+            <td class="column4 style8 s">Bluetooth-ключ мобильного телефона</td>
+          </tr>
+          <tr class="row214">
+            <td class="column1 style19 s">Вход  без ключа</td>
+            <td class="column2 style8 s">Bся машина</td>
+            <td class="column3 style8 s">Bся машина</td>
+            <td class="column4 style8 s">Bся машина</td>
+          </tr>
+          <tr class="row215">
+            <td class="column1 style19 s">Бесключевой запуск</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row216">
+            <td class="column1 style19 s">дистанционный запуск</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row217">
+            <td class="column1 style21 s">мобильный автомобиль с дистанционным управлением</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row218">
+            <td class="column1 style22 s">Функция вызова автомобиля</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row219">
+            <td class="column1 style21 s">Система проекционного дисплея (HUD)</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row220">
+            <td class="column1 style21 s">Размер проекции HUD (дюймы)</td>
+            <td class="column2 style8 s">13.35</td>
+            <td class="column3 style8 s">13.35</td>
+            <td class="column4 style8 s">13.35</td>
+          </tr>
+          <tr class="row221">
+            <td class="column1 style19 s">Встроенный регистратор вождения.</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row222">
+            <td class="column1 style21 s">Беспроводная зарядка мобильного телефона</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row223">
+            <td class="column1 style21 s">Максимальная мощность беспроводной зарядки мобильного телефона (Вт)</td>
+            <td class="column2 style8 n">15</td>
+            <td class="column3 style8 n">15</td>
+            <td class="column4 style8 n">15</td>
+          </tr>
+          <tr class="row224">
+            <td class="column1 style19 s">Розетка 110 В/220 В/230 В</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row225">
+            <td class="column1 style19 s">Интерфейс питания 12 В в багажнике</td>
+            <td class="column2 style9 s">Стандартная конфигурация</td>
+            <td class="column3 style9 s">Стандартная конфигурация</td>
+            <td class="column4 style9 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row226">
+            <td class="column1 style25 s style25" colspan="4">Конфигурация сиденья</td>
+          </tr>
+          <tr class="row227">
+            <td class="column1 style21 s">материал сиденья</td>
+            <td class="column2 style8 s">Натуральная кожа</td>
+            <td class="column3 style8 s">Натуральная кожа</td>
+            <td class="column4 style8 s">Натуральная кожа</td>
+          </tr>
+          <tr class="row228">
+            <td class="column1 style21 s">Кожаное сиденье</td>
+            <td class="column2 style8 s">кожа наппа</td>
+            <td class="column3 style8 s">кожа наппа</td>
+            <td class="column4 style8 s">кожа наппа</td>
+          </tr>
+          <tr class="row229">
+            <td class="column1 style21 s">Сиденья в спортивном стиле</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row230">
+            <td class="column1 style21 s">Расположение сидений</td>
+            <td class="column2 style8 s">2 + 3</td>
+            <td class="column3 style8 s">2 + 3</td>
+            <td class="column4 style8 s">2 + 3</td>
+          </tr>
+          <tr class="row231">
+            <td class="column1 style21 s">Независимые сиденья второго ряда</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row232">
+            <td class="column1 style21 s">сиденья третьего ряда</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row233">
+            <td class="column1 style20 s style20" rowspan="3">Электрическая регулировка сиденья</td>
+            <td class="column2 style8 s">Водительское место</td>
+            <td class="column3 style8 s">Водительское место</td>
+            <td class="column4 style8 s">Водительское место</td>
+          </tr>
+          <tr class="row234">
+            <td class="column2 style8 s">Пассажирское место</td>
+            <td class="column3 style8 s">Пассажирское место</td>
+            <td class="column4 style8 s">Пассажирское место</td>
+          </tr>
+          <tr class="row235">
+            <td class="column2 style8 s">второй ряд</td>
+            <td class="column3 style8 s">второй ряд</td>
+            <td class="column4 style8 s">второй ряд</td>
+          </tr>
+          <tr class="row236">
+            <td class="column1 style20 s style20" rowspan="3">Общая регулировка сиденья водителя</td>
+            <td class="column2 style8 s">Двигайтесь вперед назад</td>
+            <td class="column3 style8 s">Двигайтесь вперед назад</td>
+            <td class="column4 style8 s">Двигайтесь вперед назад</td>
+          </tr>
+          <tr class="row237">
+            <td class="column2 style8 s">Угол наклона спинки</td>
+            <td class="column3 style8 s">Угол наклона спинки</td>
+            <td class="column4 style8 s">Угол наклона спинки</td>
+          </tr>
+          <tr class="row238">
+            <td class="column2 style8 s">Регулировка высоты</td>
+            <td class="column3 style8 s">Регулировка высоты</td>
+            <td class="column4 style8 s">Регулировка высоты</td>
+          </tr>
+          <tr class="row239">
+            <td class="column1 style23 s style23" rowspan="2">Частичная регулировка сиденья водителя</td>
+            <td class="column2 style8 s">подголовник</td>
+            <td class="column3 style8 s">подголовник</td>
+            <td class="column4 style8 s">подголовник</td>
+          </tr>
+          <tr class="row240">
+            <td class="column2 style8 s">талия</td>
+            <td class="column3 style8 s">талия</td>
+            <td class="column4 style8 s">талия</td>
+          </tr>
+          <tr class="row241">
+            <td class="column1 style20 s style20" rowspan="3">Общая регулировка пассажирского сиденья</td>
+            <td class="column2 style8 s">Двигайтесь вперед и назад</td>
+            <td class="column3 style8 s">Двигайтесь вперед и назад</td>
+            <td class="column4 style8 s">Двигайтесь вперед и назад</td>
+          </tr>
+          <tr class="row242">
+            <td class="column2 style8 s">Регулировка высоты</td>
+            <td class="column3 style8 s">Регулировка высоты</td>
+            <td class="column4 style8 s">Регулировка высоты</td>
+          </tr>
+          <tr class="row243">
+            <td class="column2 style8 s">Угол наклона спинки</td>
+            <td class="column3 style8 s">Угол наклона спинки</td>
+            <td class="column4 style8 s">Угол наклона спинки</td>
+          </tr>
+          <tr class="row244">
+            <td class="column1 style23 s style23" rowspan="2">Частичная регулировка пассажирского сиденья</td>
+            <td class="column2 style8 s">подголовник</td>
+            <td class="column3 style8 s">подголовник</td>
+            <td class="column4 style8 s">подголовник</td>
+          </tr>
+          <tr class="row245">
+            <td class="column2 style8 s">талия</td>
+            <td class="column3 style8 s">талия</td>
+            <td class="column4 style8 s">талия</td>
+          </tr>
+          <tr class="row246">
+            <td class="column1 style21 s">Общая регулировка сидений второго ряда</td>
+            <td class="column2 style8 s">Регулировка угла наклона спинки</td>
+            <td class="column3 style8 s">Регулировка угла наклона спинки</td>
+            <td class="column4 style8 s">Регулировка угла наклона спинки</td>
+          </tr>
+          <tr class="row247">
+            <td class="column1 style21 s">Частичная регулировка сидений второго ряда.</td>
+            <td class="column2 style8 s">талия</td>
+            <td class="column3 style8 s">талия</td>
+            <td class="column4 style8 s">талия</td>
+          </tr>
+          <tr class="row248">
+            <td class="column1 style20 s style20" rowspan="4">Функции передних сидений</td>
+            <td class="column2 style8 s">обогрев</td>
+            <td class="column3 style8 s">обогрев</td>
+            <td class="column4 style8 s">обогрев</td>
+          </tr>
+          <tr class="row249">
+            <td class="column2 style8 s">вентиляция</td>
+            <td class="column3 style8 s">вентиляция</td>
+            <td class="column4 style8 s">вентиляция</td>
+          </tr>
+          <tr class="row250">
+            <td class="column2 style8 s">Память (основной драйвер)</td>
+            <td class="column3 style8 s">Память (основной драйвер)</td>
+            <td class="column4 style8 s">Память (основной драйвер)</td>
+          </tr>
+          <tr class="row251">
+            <td class="column2 style8 s">массаж</td>
+            <td class="column3 style8 s">массаж</td>
+            <td class="column4 style8 s">массаж</td>
+          </tr>
+          <tr class="row252">
+            <td class="column1 style17 s style17" rowspan="3">Функции сидений второго ряда</td>
+            <td class="column2 style8 s">обогрев</td>
+            <td class="column3 style8 s">обогрев</td>
+            <td class="column4 style8 s">обогрев</td>
+          </tr>
+          <tr class="row253">
+            <td class="column2 style8 s">вентиляция</td>
+            <td class="column3 style8 s">вентиляция</td>
+            <td class="column4 style8 s">вентиляция</td>
+          </tr>
+          <tr class="row254">
+            <td class="column2 style8 s">массаж</td>
+            <td class="column3 style8 s">массаж</td>
+            <td class="column4 style8 s">массаж</td>
+          </tr>
+          <tr class="row255">
+            <td class="column1 style7 s">Функции сидений третьего ряда</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row256">
+            <td class="column1 style10 s">Кнопка босса</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row257">
+            <td class="column1 style17 s style17" rowspan="2">Передние/задние подлокотники</td>
+            <td class="column2 style9 s">передний ряд</td>
+            <td class="column3 style9 s">передний ряд</td>
+            <td class="column4 style9 s">передний ряд</td>
+          </tr>
+          <tr class="row258">
+            <td class="column2 style9 s">задний ряд</td>
+            <td class="column3 style9 s">задний ряд</td>
+            <td class="column4 style9 s">задний ряд</td>
+          </tr>
+          <tr class="row259">
+            <td class="column1 style10 s">Задний подстаканник</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row260">
+            <td class="column1 style7 s">Подстаканник с подогревом/охлаждением</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row261">
+            <td class="column1 style7 s">Передние сиденья складываются ровно</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row262">
+            <td class="column1 style7 s">Коэффициент складывания задних сидений</td>
+            <td class="column2 style9 s">Инвертированные пропорции</td>
+            <td class="column3 style9 s">Инвертированные пропорции</td>
+            <td class="column4 style9 s">Инвертированные пропорции</td>
+          </tr>
+          <tr class="row263">
+            <td class="column1 style7 s">Задние сиденья с электроприводом наклона</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row264">
+            <td class="column1 style7 s">Маленький столик второго ряда</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row265">
+            <td class="column1 style25 s style25" colspan="4">Интеллектуальный Интернет</td>
+          </tr>
+          <tr class="row266">
+            <td class="column1 style7 s">Размер экрана центрального управления (дюймы)</td>
+            <td class="column2 style8 n">15.7</td>
+            <td class="column3 style8 n">15.7</td>
+            <td class="column4 style8 n">15.7</td>
+          </tr>
+          <tr class="row267">
+            <td class="column1 style7 s">Разрешение цветного экрана центральной консоли</td>
+            <td class="column2 style8 s">2880x1620</td>
+            <td class="column3 style8 s">2880x1620</td>
+            <td class="column4 style8 s">2880x1620</td>
+          </tr>
+          <tr class="row268">
+            <td class="column1 style7 s">Плотность пикселей цветного экрана центральной консоли (PPI)</td>
+            <td class="column2 style9 n">210</td>
+            <td class="column3 style9 n">210</td>
+            <td class="column4 style9 n">210</td>
+          </tr>
+          <tr class="row269">
+            <td class="column1 style7 s">Размер экрана пассажира (дюймы)</td>
+            <td class="column2 style8 n">15.7</td>
+            <td class="column3 style8 n">15.7</td>
+            <td class="column4 style8 n">15.7</td>
+          </tr>
+          <tr class="row270">
+            <td class="column1 style7 s">Разрешение экрана пассажира</td>
+            <td class="column2 style8 s">2880x1620</td>
+            <td class="column3 style8 s">2880x1620</td>
+            <td class="column4 style8 s">2880x1620</td>
+          </tr>
+          <tr class="row271">
+            <td class="column1 style7 s">Плотность пикселей пассажирского экрана (PPI)</td>
+            <td class="column2 style8 n">210</td>
+            <td class="column3 style8 n">210</td>
+            <td class="column4 style8 n">210</td>
+          </tr>
+          <tr class="row272">
+            <td class="column1 style7 s">Вибрационная обратная связь с сенсорным экраном</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row273">
+            <td class="column1 style10 s">GPS-навигационная система</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row274">
+            <td class="column1 style7 s">AR-навигация в реальной жизни</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row275">
+            <td class="column1 style7 s">Отображение навигационной информации о дорожном движении</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row276">
+            <td class="column1 style10 s">Bluetooth/автомобильный телефон</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row277">
+            <td class="column1 style7 s">Картирование мобильного Интернета</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row278">
+            <td class="column1 style10 s">Интернет транспортных средств</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row279">
+            <td class="column1 style7 s">Сеть 4G/5G</td>
+            <td class="column2 style9 s">5G</td>
+            <td class="column3 style9 s">5G</td>
+            <td class="column4 style9 s">5G</td>
+          </tr>
+          <tr class="row280">
+            <td class="column1 style10 s">ОТА-обновление</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row281">
+            <td class="column1 style7 s">распознавание лица</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row282">
+            <td class="column1 style7 s">Распознавание отпечатков пальцев</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row283">
+            <td class="column1 style7 s">Распознавание голосового отпечатка</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row284">
+            <td class="column1 style7 s">распознавание эмоций</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row285">
+            <td class="column1 style7 s">Система управления распознаванием голоса</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row286">
+            <td class="column1 style7 s">Функция голосового пробуждения без пробуждения</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row287">
+            <td class="column1 style17 s style17" rowspan="3">Функция распознавания пробуждения по голосовой области</td>
+            <td class="column2 style9 s">Основной драйвер</td>
+            <td class="column3 style9 s">Основной драйвер</td>
+            <td class="column4 style9 s">Основной драйвер</td>
+          </tr>
+          <tr class="row288">
+            <td class="column2 style9 s">второй пилот</td>
+            <td class="column3 style9 s">второй пилот</td>
+            <td class="column4 style9 s">второй пилот</td>
+          </tr>
+          <tr class="row289">
+            <td class="column2 style9 s">второй ряд</td>
+            <td class="column3 style9 s">второй ряд</td>
+            <td class="column4 style9 s">второй ряд</td>
+          </tr>
+          <tr class="row290">
+            <td class="column1 style10 s">непрерывное распознавание речи</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row291">
+            <td class="column1 style10 s">Можно сказать, что это видно</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row292">
+            <td class="column1 style7 s">Слово пробуждения голосового помощника</td>
+            <td class="column2 style8 s">идеальный одноклассник</td>
+            <td class="column3 style8 s">идеальный одноклассник</td>
+            <td class="column4 style8 s">идеальный одноклассник</td>
+          </tr>
+          <tr class="row293">
+            <td class="column1 style7 s">Функция управления жестами</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row294">
+            <td class="column1 style7 s">Точка доступа Wi-Fi</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row295">
+            <td class="column1 style25 s style25" colspan="4">Медиа-развлечения</td>
+          </tr>
+          <tr class="row296">
+            <td class="column1 style7 s">Управление летающим экраном несколькими пальцами</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row297">
+            <td class="column1 style10 s">магазин приложений</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row298">
+            <td class="column1 style7 s">мультимедийный интерфейс</td>
+            <td class="column2 style9 s">USB/Тип-C</td>
+            <td class="column3 style9 s">USB/Тип-C</td>
+            <td class="column4 style9 s">USB/Тип-C</td>
+          </tr>
+          <tr class="row299">
+            <td class="column1 style17 s style17" rowspan="2">Количество интерфейсов USB/Type-C</td>
+            <td class="column2 style9 s">2 в первом ряду</td>
+            <td class="column3 style9 s">2 в первом ряду</td>
+            <td class="column4 style9 s">2 в первом ряду</td>
+          </tr>
+          <tr class="row300">
+            <td class="column2 style9 s">2 в заднем ряду</td>
+            <td class="column3 style9 s">2 в заднем ряду</td>
+            <td class="column4 style9 s">2 в заднем ряду</td>
+          </tr>
+          <tr class="row301">
+            <td class="column1 style18 s style18" rowspan="2">Максимальная мощность зарядки USB/Type-C</td>
+            <td class="column2 style9 s">Передний ряд 60 Вт</td>
+            <td class="column3 style9 s">Передний ряд 60 Вт</td>
+            <td class="column4 style9 s">Передний ряд 60 Вт</td>
+          </tr>
+          <tr class="row302">
+            <td class="column2 style9 s">60 Вт сзади</td>
+            <td class="column3 style9 s">60 Вт сзади</td>
+            <td class="column4 style9 s">60 Вт сзади</td>
+          </tr>
+          <tr class="row303">
+            <td class="column1 style7 s">задний ЖК-экран</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row304">
+            <td class="column1 style7 s">имитация звука</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row305">
+            <td class="column1 style7 s">Режим успокаивающего (релаксации)</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row306">
+            <td class="column1 style10 s">Функция караоке</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row307">
+            <td class="column1 style7 s">аудио бренд</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row308">
+            <td class="column1 style7 s">Количество динамиков (шт.)</td>
+            <td class="column2 style8 n">19</td>
+            <td class="column3 style8 n">19</td>
+            <td class="column4 style8 n">21</td>
+          </tr>
+          <tr class="row309">
+            <td class="column1 style7 s">Задний мультимедийный контроль</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row310">
+            <td class="column1 style25 s style25" colspan="4">Конфигурация освещения</td>
+          </tr>
+          <tr class="row311">
+            <td class="column1 style7 s">Фары ближнего света</td>
+            <td class="column2 style9 s">вел</td>
+            <td class="column3 style9 s">вел</td>
+            <td class="column4 style9 s">вел</td>
+          </tr>
+          <tr class="row312">
+            <td class="column1 style7 s">Дальний свет</td>
+            <td class="column2 style9 s">вел</td>
+            <td class="column3 style9 s">вел</td>
+            <td class="column4 style9 s">вел</td>
+          </tr>
+          <tr class="row313">
+            <td class="column1 style10 s">дневные ходовые огни</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row314">
+            <td class="column1 style7 s">Адаптивный дальний и ближний свет</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row315">
+            <td class="column1 style10 s">автоматические фары</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row316">
+            <td class="column1 style7 s">Включите вспомогательный свет</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row317">
+            <td class="column1 style7 s">Передние противотуманные фары</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row318">
+            <td class="column1 style7 s">Адаптивное рулевое управление фарами (AFS)</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row319">
+            <td class="column1 style10 s">Регулировка высоты фар</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row320">
+            <td class="column1 style7 s">Функция очистки фар</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row321">
+            <td class="column1 style7 s">Окружающее освещение салона автомобиля</td>
+            <td class="column2 style8 s">256 цветов</td>
+            <td class="column3 style8 s">256 цветов</td>
+            <td class="column4 style8 s">256 цветов</td>
+          </tr>
+          <tr class="row322">
+            <td class="column1 style7 s">Активное окружающее освещение</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row323">
+            <td class="column1 style7 s">Особенности освещения</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row324">
+            <td class="column1 style10 s">Задержка выключения фар</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row325">
+            <td class="column1 style7 s">Режим фар «дождь и туман»</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row326">
+            <td class="column1 style25 s style25" colspan="4">Cтекло/зеркало заднего вида</td>
+          </tr>
+          <tr class="row327">
+            <td class="column1 style17 s style17" rowspan="2">Электрические стеклоподъемники</td>
+            <td class="column2 style9 s">передний ряд</td>
+            <td class="column3 style9 s">передний ряд</td>
+            <td class="column4 style9 s">передний ряд</td>
+          </tr>
+          <tr class="row328">
+            <td class="column2 style9 s">задний ряд</td>
+            <td class="column3 style9 s">задний ряд</td>
+            <td class="column4 style9 s">задний ряд</td>
+          </tr>
+          <tr class="row329">
+            <td class="column1 style7 s">Подъем и опускание окон в один клик</td>
+            <td class="column2 style8 s">вся машина</td>
+            <td class="column3 style8 s">вся машина</td>
+            <td class="column4 style8 s">вся машина</td>
+          </tr>
+          <tr class="row330">
+            <td class="column1 style17 s style17" rowspan="7">Функция наружного зеркала заднего вида</td>
+            <td class="column2 style9 s">Электрическая регулировка</td>
+            <td class="column3 style9 s">Электрическая регулировка</td>
+            <td class="column4 style9 s">Электрическая регулировка</td>
+          </tr>
+          <tr class="row331">
+            <td class="column2 style9 s">обогрев</td>
+            <td class="column3 style9 s">обогрев</td>
+            <td class="column4 style9 s">обогрев</td>
+          </tr>
+          <tr class="row332">
+            <td class="column2 style9 s">Электрический складной</td>
+            <td class="column3 style9 s">Электрический складной</td>
+            <td class="column4 style9 s">Электрический складной</td>
+          </tr>
+          <tr class="row333">
+            <td class="column2 style9 s">Память</td>
+            <td class="column3 style9 s">Память</td>
+            <td class="column4 style9 s">Память</td>
+          </tr>
+          <tr class="row334">
+            <td class="column2 style9 s">Автоматический спуск при движении задним ходом</td>
+            <td class="column3 style9 s">Автоматический спуск при движении задним ходом</td>
+            <td class="column4 style9 s">Автоматический спуск при движении задним ходом</td>
+          </tr>
+          <tr class="row335">
+            <td class="column2 style9 s">Автоматическое складывание при запирании автомобиля</td>
+            <td class="column3 style9 s">Автоматическое складывание при запирании автомобиля</td>
+            <td class="column4 style9 s">Автоматическое складывание при запирании автомобиля</td>
+          </tr>
+          <tr class="row336">
+            <td class="column2 style9 s">Автоматическая защита от ослепления</td>
+            <td class="column3 style9 s">Автоматическая защита от ослепления</td>
+            <td class="column4 style9 s">Автоматическая защита от ослепления</td>
+          </tr>
+          <tr class="row337">
+            <td class="column1 style7 s">Функция внутреннего зеркала заднего вида</td>
+            <td class="column2 style9 s">Автоматическая защита от ослепления</td>
+            <td class="column3 style9 s">Автоматическая защита от ослепления</td>
+            <td class="column4 style9 s">Автоматическая защита от ослепления</td>
+          </tr>
+          <tr class="row338">
+            <td class="column1 style17 s style17" rowspan="2">Автомобильное косметическое зеркало</td>
+            <td class="column2 style9 s">Основное место водителя + освещение</td>
+            <td class="column3 style9 s">Основное место водителя + освещение</td>
+            <td class="column4 style9 s">Основное место водителя + освещение</td>
+          </tr>
+          <tr class="row339">
+            <td class="column2 style9 s">Пассажирское сиденье + подсветка</td>
+            <td class="column3 style9 s">Пассажирское сиденье + подсветка</td>
+            <td class="column4 style9 s">Пассажирское сиденье + подсветка</td>
+          </tr>
+          <tr class="row340">
+            <td class="column1 style10 s">Заднее защитное стекло</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row341">
+            <td class="column1 style7 s">автомобильный солнцезащитный козырек</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row342">
+            <td class="column1 style7 s">Дворники с датчиком дождя</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row343">
+            <td class="column1 style10 s">задний стеклоочиститель</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row344">
+            <td class="column1 style7 s">заднее окно открыто</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row345">
+            <td class="column1 style7 s">Многослойное звукоизоляционное стекло.</td>
+            <td class="column2 style9 s">вся машина</td>
+            <td class="column3 style9 s">вся машина</td>
+            <td class="column4 style9 s">вся машина</td>
+          </tr>
+          <tr class="row346">
+            <td class="column1 style7 s">Электрообогрев лобового стекла</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row347">
+            <td class="column1 style7 s">Форсунка для подогрева воды</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row348">
+            <td class="column1 style25 s style25" colspan="4">Кондиционер/холодильник</td>
+          </tr>
+          <tr class="row349">
+            <td class="column1 style7 s">Метод  управления кондиционером</td>
+            <td class="column2 style8 s">автоматический</td>
+            <td class="column3 style8 s">автоматический</td>
+            <td class="column4 style8 s">автоматический</td>
+          </tr>
+          <tr class="row350">
+            <td class="column1 style7 s">Независимый кондиционер в задней части салона</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row351">
+            <td class="column1 style7 s">Заднее воздуховыпускное отверстие</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row352">
+            <td class="column1 style7 s">Контроль температурной зоны</td>
+            <td class="column2 style9 s">Трехзонный кондиционер</td>
+            <td class="column3 style9 s">Трехзонный кондиционер</td>
+            <td class="column4 style9 s">Трехзонный кондиционер</td>
+          </tr>
+          <tr class="row353">
+            <td class="column1 style7 s">Очиститель воздуха для автомобиля</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row354">
+            <td class="column1 style21 s">Устройство автомобильного фильтра PM2,5</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row355">
+            <td class="column1 style21 s">НЕРА-фильтр</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row356">
+            <td class="column1 style21 s">Генератор отрицательных ионов</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row357">
+            <td class="column1 style21 s">Устройство ароматизации автомобиля</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row358">
+            <td class="column1 style21 s">автомобильный холодильник</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row359">
+            <td class="column1 style25 s style25" colspan="4">Интеллектуальная конфигурация</td>
+          </tr>
+          <tr class="row360">
+            <td class="column1 style20 s style20" rowspan="2">Операционная система помощи при вождении</td>
+            <td class="column2 style24 s">Идеальная система AD Pro</td>
+            <td class="column3 style24 s">Идеальная система AD Pro</td>
+            <td class="column4 style24 s">Идеальная система AD Pro</td>
+          </tr>
+          <tr class="row361">
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">Идеальная система AD Max</td>
+          </tr>
+          <tr class="row362">
+            <td class="column1 style20 s style20" rowspan="2">Чип помощи при вождении</td>
+            <td class="column2 style8 s">Путешествие по горизонту 5</td>
+            <td class="column3 style8 s">Путешествие по горизонту 5</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row363">
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">Двойной NVIDIA Orin-X</td>
+          </tr>
+          <tr class="row364">
+            <td class="column1 style23 s style23" rowspan="2">Вычислительная мощность чипа с вспомогательным управлением (TOPS)</td>
+            <td class="column2 style8 n">128</td>
+            <td class="column3 style8 n">128</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row365">
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 n">508</td>
+          </tr>
+          <tr class="row366">
+            <td class="column1 style20 s style20" rowspan="2">Смарт-чип автомобиля</td>
+            <td class="column2 style8 s">Qualcomm Snapdragon 8155</td>
+            <td class="column3 style8 s">Qualcomm Snapdragon 8155</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row367">
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">Двойной процессор Qualcomm Snapdragon 8155</td>
+          </tr>
+          <tr class="row368">
+            <td class="column1 style23 s style23" rowspan="2">Системная память автомобиля (ГБ)</td>
+            <td class="column2 style8 n">12</td>
+            <td class="column3 style8 n">12</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row369">
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">двадцать четыре</td>
+          </tr>
+          <tr class="row370">
+            <td class="column1 style23 s style23" rowspan="2">Память системы автомобиля (ГБ)</td>
+            <td class="column2 style8 n">128</td>
+            <td class="column3 style8 n">128</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row371">
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 n">256</td>
+          </tr>
+          <tr class="row372">
+            <td class="column1 style20 s style20" rowspan="6">Удаленное управление через мобильное приложение</td>
+            <td class="column2 style8 s">цифровой ключ</td>
+            <td class="column3 style8 s">цифровой ключ</td>
+            <td class="column4 style8 s">цифровой ключ</td>
+          </tr>
+          <tr class="row373">
+            <td class="column2 style8 s">мониторинг транспортных средств</td>
+            <td class="column3 style8 s">мониторинг транспортных средств</td>
+            <td class="column4 style8 s">мониторинг транспортных средств</td>
+          </tr>
+          <tr class="row374">
+            <td class="column2 style8 s">Дистанционное управление</td>
+            <td class="column3 style8 s">Дистанционное управление</td>
+            <td class="column4 style8 s">Дистанционное управление</td>
+          </tr>
+          <tr class="row375">
+            <td class="column2 style8 s">Управление зарядкой</td>
+            <td class="column3 style8 s">Управление зарядкой</td>
+            <td class="column4 style8 s">Управление зарядкой</td>
+          </tr>
+          <tr class="row376">
+            <td class="column2 style8 s">Запись на обслуживание</td>
+            <td class="column3 style8 s">Запись на обслуживание</td>
+            <td class="column4 style8 s">Запись на обслуживание</td>
+          </tr>
+          <tr class="row377">
+            <td class="column2 style8 s">Интеллектуальный помощник по поиску автомобилей</td>
+            <td class="column3 style8 s">Интеллектуальный помощник по поиску автомобилей</td>
+            <td class="column4 style8 s">Интеллектуальный помощник по поиску автомобилей</td>
+          </tr>
+          <tr class="row378">
+            <td class="column1 style21 s">система управления тепловым насосом</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row379">
+            <td class="column1 style21 s">Количество камер снаружи автомобиля (количество)</td>
+            <td class="column2 style8 n">10</td>
+            <td class="column3 style8 n">10</td>
+            <td class="column4 style8 n">11</td>
+          </tr>
+          <tr class="row380">
+            <td class="column1 style19 s">Пиксели внешней камеры автомобиля</td>
+            <td class="column2 style8 s">2 миллиона*9 штук, 8 миллионов*1 штук</td>
+            <td class="column3 style8 s">2 миллиона*9 штук, 8 миллионов*1 штук</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row381">
+            <td class="column1 style7 s">Количество камер в автомобиле (количество)</td>
+            <td class="column2 style8 n">1</td>
+            <td class="column3 style8 n">1</td>
+            <td class="column4 style8 n">1</td>
+          </tr>
+          <tr class="row382">
+            <td class="column1 style7 s">Пиксели автомобильной камеры</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row383">
+            <td class="column1 style7 s">Количество ультразвуковых радаров (шт.)</td>
+            <td class="column2 style9 n">12</td>
+            <td class="column3 style9 n">12</td>
+            <td class="column4 style9 n">12</td>
+          </tr>
+          <tr class="row384">
+            <td class="column1 style7 s">Количество радаров миллиметрового диапазона (шт.)</td>
+            <td class="column2 style8 n">1</td>
+            <td class="column3 style8 n">1</td>
+            <td class="column4 style8 n">1</td>
+          </tr>
+          <tr class="row385">
+            <td class="column1 style7 s">Количество LiDAR (шт.)</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 n">1</td>
+          </tr>
+          <tr class="row386">
+            <td class="column1 style7 s">Лидарный бренд</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style9 s">Хэсай Технология</td>
+          </tr>
+          <tr class="row387">
+            <td class="column1 style7 s">Количество лидарных линий (линий)</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style9 n">128</td>
+          </tr>
+          <tr class="row388">
+            <td class="column1 style7 s">Количество облаков точек лидара (10 000 в секунду)</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style11 n">153</td>
+          </tr>
+          <tr class="row389">
+            <td class="column1 style7 s">Высокоточная система позиционирования субметрового уровня</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row390">
+            <td class="column1 style10 s">Высокоточная карта</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row391">
+            <td class="column1 style7 s">Режим дозорного (ясновидения)</td>
+            <td class="column2 style8 s">Стандартная конфигурация</td>
+            <td class="column3 style8 s">Стандартная конфигурация</td>
+            <td class="column4 style8 s">Стандартная конфигурация</td>
+          </tr>
+          <tr class="row392">
+            <td class="column1 style7 s">Связь V2X</td>
+            <td class="column2 style8 s">-</td>
+            <td class="column3 style8 s">-</td>
+            <td class="column4 style8 s">-</td>
+          </tr>
+          <tr class="row393">
+            <td class="column1 style25 s style25" colspan="4">Дополнительный пакет</td>
+          </tr>
+          <tr class="row394">
+            <td class="column1 style7 s">Индивидуальные параметры</td>
+            <td class="column2 style9 s">Опционально: внешний вид, интерьер, колеса, тормоза</td>
+            <td class="column3 style9 s">Опционально: внешний вид, интерьер, колеса, тормоза</td>
+            <td class="column4 style9 s">Опционально: внешний вид, интерьер, колеса, тормоза</td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
